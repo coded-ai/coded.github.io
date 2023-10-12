@@ -590,6 +590,16 @@ section {
   }
 }
 
+.highlight-text {
+  font-size: 1.2em; 
+  color: #2c3e50; /* A deep blue tone for the text */
+  background-color: #ecf0f1; /* A soft gray background for contrast */
+  padding: 15px 20px; /* Padding around the text for space */
+  border-radius: 10px; /* Rounded corners for aesthetics */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
+  border-left: 5px solid #e74c3c; /* A left border for added emphasis */
+}
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -654,23 +664,32 @@ section {
 
 .about .icon-boxes .icon-box {
   margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9; 
+  margin-bottom: 20px; 
+  border-radius: 10px; 
+  transition: transform 0.2s; 
+}
+
+.about .icon-boxes .icon-box:hover {
+  transform: scale(1.05); 
 }
 
 .about .icon-boxes .icon-box i {
-  font-size: 40px;
-  color: #67b0d1;
-  margin-bottom: 10px;
+  font-size: 2em; 
+  color: #e74c3c; 
+  margin-bottom: 15px;
 }
 
 .about .icon-boxes .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
+  font-size: 1.25em; 
+  color: #34495e;
+  margin-bottom: 10px;
 }
 
 .about .icon-boxes .icon-box p {
   font-size: 15px;
-  color: #848484;
+  color: #7f8c8d; 
 }
 
 @media (max-width: 1200px) {
@@ -1455,6 +1474,15 @@ section {
   border-top: 1px solid #385b6b;
   text-align: center;
   padding-top: 30px;
+}
+
+.coming-soon-message {
+  font-size: 1.5em; 
+  color: #e74c3c; 
+  font-weight: 600; 
+  margin-top: 20px;
+  border-top: 2px dashed #e74c3c;
+  padding-top: 20px;
 }
 
 #footer .credits {
