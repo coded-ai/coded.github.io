@@ -13,7 +13,10 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
 }
-
+.custom-col {
+  flex: 0 0 20%; /* Set base width to 20% */
+  max-width: 20%; /* Limit maximum width to 20% */
+}
 a {
   text-decoration: none;
   color: #67b0d1;
