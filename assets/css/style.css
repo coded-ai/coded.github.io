@@ -415,7 +415,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/hero-bg.jpg") top center;
+  background: linear-gradient(rgba(55, 142, 181, 0.5), rgba(55, 142, 181, 0.2)), url("../img/background.gif") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -434,24 +434,30 @@ h6 {
   text-align: center;
 }
 
+/* Base styles for hero section */
+#hero h1, #hero h2 {
+  font-weight: 700; /* Bold font for both headers */
+  color: #fff; /* White text color */
+  text-shadow: -1px 0 2px #2f4d5a; /* Text shadow for contrast */
+}
+
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 0 20px 0; /* Adjusted margin to be consistent */
   font-size: 64px;
-  font-weight: 700;
-  line-height: 56px;
+  line-height: 70px; /* Increased a bit for better vertical rhythm */
   text-transform: uppercase;
-  color: #fff;
-  text-shadow: -1px 0 2px #2f4d5a;
+}
+
+#hero h1 span {
+  color: #e74c3c; /* Highlight color for the 'coded.' part */
 }
 
 #hero h2 {
-  color: #fff;
   margin-bottom: 50px;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: 700;
-  text-shadow: -1px 0 2px #2f4d5a;
+  font-size: 32px;
+  text-transform: lowercase; /* This is unique, keeping it for stylistic preference */
 }
+
 
 #hero .btn-get-started {
   font-size: 36px;
