@@ -103,14 +103,20 @@ h6 {
   padding: 12px;
 }
 
+#header .logo img{
+  display: inline-block;
+  vertical-align: middle;
+}
 #header .logo h1 {
-  font-size: 24px;
+  font-size: 32px;
   margin: 0;
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
+  display: inline-block;
   text-transform: uppercase;
+  vertical-align: middle;
 }
 
 #header .logo h1 a,
@@ -449,7 +455,7 @@ h6 {
   margin: 0 0 20px 0; /* Adjusted margin to be consistent */
   font-size: 64px;
   line-height: 70px; /* Increased a bit for better vertical rhythm */
-  text-transform: uppercase;
+ 
 }
 
 #hero h1 span {
@@ -1338,113 +1344,56 @@ section {
 #footer {
   background: #263f49;
   padding: 0 0 30px 0;
-  color: #fff;
+  color: white;  
   font-size: 14px;
+  padding: 20px;  
 }
 
-#footer .footer-top {
-  padding: 60px 0 30px 0;
-}
-
-#footer .footer-top .footer-info {
-  margin-top: -90px;
-  margin-bottom: 15px;
-  background: white;
-  color: #2f4d5a;
-  border-top: 4px solid #67b0d1;
+#footer .logo{
   text-align: center;
-  padding: 30px 20px;
+  margin-bottom: 20px;
+  
 }
 
-#footer .footer-top .footer-info h3 {
-  font-size: 24px;
-  margin: 0 0 20px 0;
-  padding: 2px 0 2px 0;
+#footer  .logo img{
+  display: inline-block;
+  text-align: center;
+  
+}
+#footer .logo h1 {
+  font-size: 32px;
+  margin: 0;
   line-height: 1;
   font-weight: 700;
-}
-
-#footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
-  margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
-}
-
-#footer .footer-top .social-links a {
-  font-size: 18px;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
   display: inline-block;
-  background: #2f4d5a;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
-#footer .footer-top .social-links a:hover {
-  background: #67b0d1;
-  color: #fff;
-  text-decoration: none;
+#footer .logo h2 
+{
+  font-size: 12px;
+  margin-top: 10px;
+  font-family: "Poppins", sans-serif;
+  font-style: italic;
+
 }
 
-#footer .footer-top h4 {
-  font-size: 16px;
-  font-weight: 600;
-  color: #fff;
-  position: relative;
-  padding-bottom: 12px;
-}
-
-#footer .footer-top .footer-links {
-  margin-bottom: 30px;
-}
-
-#footer .footer-top .footer-links ul {
-  list-style: none;
-  padding: 0;
+#footer .logo h1  a{
+  font-size: 32px;
   margin: 0;
-}
-
-#footer .footer-top .footer-links ul i {
-  padding-right: 2px;
-  color: #b5d9e9;
-  font-size: 18px;
   line-height: 1;
-}
-
-#footer .footer-top .footer-links ul li {
-  padding: 10px 0;
-  display: flex;
-  align-items: center;
-}
-
-#footer .footer-top .footer-links ul li:first-child {
-  padding-top: 0;
-}
-
-#footer .footer-top .footer-links ul a {
-  color: #fff;
-  transition: 0.3s;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
   display: inline-block;
-  line-height: 1;
+  text-transform: uppercase;
+  vertical-align: middle;
+  color: white;
 }
 
-#footer .footer-top .footer-links ul a:hover {
-  color: #a2cfe3;
-}
-
-#footer .footer-top .footer-newsletter form {
-  margin-top: 30px;
-  background: #fff;
-  padding: 6px 10px;
-  position: relative;
-  border-radius: 4;
-}
 
 #footer .footer-top .footer-newsletter form input[type=email] {
   border: 0;
