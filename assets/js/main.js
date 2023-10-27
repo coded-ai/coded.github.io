@@ -236,6 +236,38 @@
     }
   });
 
+  function updateTimeLeft() {
+    const now = new Date();
+    const specificationDate = new Date(now.getFullYear(), 10, 4);  // November 3rd -Spec report deadline + 1 day
+    const requirementsDate = new Date(now.getFullYear(), 10, 18); // November 17th - Req report deadline + 1 day
+    
+    const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
+    const requirementsTimeLeft = Math.ceil((requirementsDate - now) / (1000 * 60 * 60 * 24));
+
+    const specificationNote = document.getElementById("specification-note");
+    const requirementsNote = document.getElementById("requirements-note");
+    const specificationLink = document.getElementById("specification-link");
+    const requirementsLink = document.getElementById("requirements-link");
+
+    if (specificationTimeLeft > 0) {
+      specificationNote.textContent = `Available in ${specificationTimeLeft} days`;
+    } else {
+      specificationNote.textContent = 'Available now!';
+      specificationLink.style.display = 'block';
+    }
+
+    if (requirementsTimeLeft > 0) {
+      requirementsNote.textContent = `Available in ${requirementsTimeLeft} days`;
+    } else {
+      requirementsNote.textContent = 'Available now!';
+      requirementsLink.style.display = 'block';
+    }
+  }
+
+  // Update time left immediately and then every day
+  updateTimeLeft();
+  setInterval(updateTimeLeft, 24 * 60 * 60 * 1000);
+
 
   /**
    * Animation on scroll
