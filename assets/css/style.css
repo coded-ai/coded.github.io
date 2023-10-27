@@ -444,6 +444,22 @@ h6 {
   text-align: center;
 }
 
+.github-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 17px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.github-btn i {
+  margin-left: 5px;
+}
+
 /* Base styles for hero section */
 #hero h1, #hero h2 {
   font-weight: 700; /* Bold font for both headers */
