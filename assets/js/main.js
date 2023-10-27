@@ -238,6 +238,8 @@
 
   function updateTimeLeft() {
     const now = new Date();
+
+    
     const specificationDate = new Date(now.getFullYear(), 10, 4);  // November 3rd -Spec report deadline + 1 day
     const requirementsDate = new Date(now.getFullYear(), 10, 18); // November 17th - Req report deadline + 1 day
     
