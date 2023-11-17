@@ -254,7 +254,7 @@
     if (specificationTimeLeft > 0) {
       specificationNote.textContent = `Available in ${specificationTimeLeft} days`;
     } else {
-      specificationNote.textContent = 'Submitted at 2/11/2023';
+      specificationNote.textContent = 'Submitted at 17/11/2023';
       specificationLink.style.display = 'block';
     }
 
