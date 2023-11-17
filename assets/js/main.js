@@ -240,7 +240,7 @@
     const now = new Date();
 
     
-    const specificationDate = new Date(now.getFullYear(), 10, 18);  // November 17 -Spec report deadline + 1 day
+    const specificationDate = new Date(now.getFullYear(), 10, 17);  // November 17 -Spec report deadline + 1 day
     const requirementsDate = new Date(now.getFullYear(), 11, 2); // December 1 - Req report deadline + 1 day
     
     const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
@@ -254,14 +254,14 @@
     if (specificationTimeLeft > 0) {
       specificationNote.textContent = `Available in ${specificationTimeLeft} days`;
     } else {
-      specificationNote.textContent = 'Available now!';
+      specificationNote.textContent = 'Submitted at 2/11/2023';
       specificationLink.style.display = 'block';
     }
 
     if (requirementsTimeLeft > 0) {
       requirementsNote.textContent = `Available in ${requirementsTimeLeft} days`;
     } else {
-      requirementsNote.textContent = 'Available now!';
+      requirementsNote.textContent = 'Available';
       requirementsLink.style.display = 'block';
     }
   }
