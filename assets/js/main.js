@@ -242,14 +242,18 @@
     
     const specificationDate = new Date(now.getFullYear(), 10, 17);  // November 17 -Spec report deadline + 1 day
     const requirementsDate = new Date(now.getFullYear(), 11, 8); // December 8 - Req report deadline + 1 day
+    const presentationDate = new Date(now.getFullYear(), 11, 20);
     
     const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
     const requirementsTimeLeft = Math.ceil((requirementsDate - now) / (1000 * 60 * 60 * 24));
+    const presentationTimeLeft = Math.ceil((presentationDate- now) / (1000 * 60 * 60 * 24));
 
     const specificationNote = document.getElementById("specification-note");
     const requirementsNote = document.getElementById("requirements-note");
+    const presentationNote = document.getElementById("presentation-note");
     const specificationLink = document.getElementById("specification-link");
     const requirementsLink = document.getElementById("requirements-link");
+    const presentationLink = document.getElementById("presentation-link");
 
     if (specificationTimeLeft > 0) {
       specificationNote.textContent = `Available in ${specificationTimeLeft} days`;
@@ -263,6 +267,12 @@
     } else {
       requirementsNote.textContent = 'Submitted on 08/12/2023';
       requirementsLink.style.display = 'block';
+    }
+    if (presentationTimeLeft > 0) {
+      presentationNote.textContent = `Available in ${presentationTimeLeft} days`;
+    } else {
+      presentationNote.textContent = 'Presented on 5/12/2023';
+      presentationLink.style.display = 'block';
     }
   }
 
