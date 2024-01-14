@@ -240,9 +240,9 @@
     const now = new Date();
 
     
-    const specificationDate = new Date(now.getFullYear(), 10, 17);  // November 17 -Spec report deadline + 1 day
-    const requirementsDate = new Date(now.getFullYear(), 11, 8); // December 8 - Req report deadline + 1 day
-    const presentationDate = new Date(now.getFullYear(), 11, 20);
+    const specificationDate = new Date(2023, 10, 17);  // November 17 -Spec report deadline + 1 day
+    const requirementsDate = new Date(2023, 11, 8); // December 8 - Req report deadline + 1 day
+    const presentationDate = new Date(2023, 11, 20); // December 20 - Presentation deadline + 1 day
     
     const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
     const requirementsTimeLeft = Math.ceil((requirementsDate - now) / (1000 * 60 * 60 * 24));
