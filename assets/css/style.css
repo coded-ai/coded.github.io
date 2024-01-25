@@ -1232,7 +1232,7 @@ section {
 # Contact
 --------------------------------------------------------------*/
 .contact {
-  padding-bottom: 70px;
+  height: auto;
 }
 
 .contact .info-box {
@@ -1255,7 +1255,6 @@ section {
   font-size: 20px;
   color: #777777;
   font-weight: 700;
-  margin: 10px 0;
 }
 
 .contact .info-box p {
@@ -1265,84 +1264,12 @@ section {
   margin-bottom: 0;
 }
 
-.contact .php-email-form {
-  box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
-  background: #fff;
+.contact .jotform-container {
+  height: auto;
 }
 
-.contact .php-email-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: left;
-  padding: 15px;
-  font-weight: 600;
-}
 
-.contact .php-email-form .error-message br+br {
-  margin-top: 25px;
-}
 
-.contact .php-email-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-}
-
-.contact .php-email-form .loading {
-  display: none;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-}
-
-.contact .php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  animation: animate-loading 1s linear infinite;
-}
-
-.contact .php-email-form input,
-.contact .php-email-form textarea {
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-}
-
-.contact .php-email-form input::focus,
-.contact .php-email-form textarea::focus {
-  background-color: #67b0d1;
-}
-
-.contact .php-email-form input {
-  padding: 10px 15px;
-}
-
-.contact .php-email-form textarea {
-  padding: 12px 15px;
-}
-
-.contact .php-email-form button[type=submit] {
-  background: #67b0d1;
-  border: 0;
-  padding: 10px 24px;
-  color: #fff;
-  transition: 0.4s;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: #8ec4dd;
-}
 
 @keyframes animate-loading {
   0% {
@@ -1464,6 +1391,11 @@ section {
   border-color: white;
   
 }
+
+.jotform-container {
+  height: auto;
+}
+
 
 /* Additional custom styling if needed */
 
