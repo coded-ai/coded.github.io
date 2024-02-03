@@ -243,17 +243,30 @@
     const specificationDate = new Date(2023, 10, 17);  // November 17 -Spec report deadline + 1 day
     const requirementsDate = new Date(2023, 11, 8); // December 8 - Req report deadline + 1 day
     const presentationDate = new Date(2023, 11, 20); // December 20 - Presentation deadline + 1 day
+
+    const detailedDesignDate = new Date(2024, 3, 16); // March 16 - Detailed Report deadline + 1 day
+    const finalReportDate = new Date(2024, 5, 11); // May 11 - Final Report deadline + 1 day 
+    const springPresentationDate = new Date(2024, 5, 17); // Last Day of Semester + 1 Day
     
     const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
     const requirementsTimeLeft = Math.ceil((requirementsDate - now) / (1000 * 60 * 60 * 24));
     const presentationTimeLeft = Math.ceil((presentationDate- now) / (1000 * 60 * 60 * 24));
+    const detailedDesignDateLeft = Math.ceil((detailedDesignDate - now) / (1000 * 60 * 60 * 24));
+    const finalReportDateLeft = Math.ceil((finalReportDate - now) / (1000 * 60 * 60 * 24));
+    const springPresentationDateLeft = Math.ceil((springPresentationDate - now) / (1000 * 60 * 60 * 24));
 
     const specificationNote = document.getElementById("specification-note");
     const requirementsNote = document.getElementById("requirements-note");
     const presentationNote = document.getElementById("presentation-note");
+    const detailedDesignNote = document.getElementById("detailed-design-note");
+    const finalReportNote = document.getElementById("final-report-note");
+    const springPresentationNote = document.getElementById("spring-presentation-note");
     const specificationLink = document.getElementById("specification-link");
     const requirementsLink = document.getElementById("requirements-link");
     const presentationLink = document.getElementById("presentation-link");
+    const detailedDesignLink = document.getElementById("detailed-design-link");
+    const finalReportLink = document.getElementById("final-report-link");
+    const springPresentationLink = document.getElementById("spring-presentation-link");
 
     if (specificationTimeLeft > 0) {
       specificationNote.textContent = `Available in ${specificationTimeLeft} days`;
@@ -273,6 +286,24 @@
     } else {
       presentationNote.textContent = 'Presented on 5/12/2023';
       presentationLink.style.display = 'block';
+    }
+    if (detailedDesignDateLeft > 0) {
+      detailedDesignNote.textContent = `Available in ${detailedDesignDateLeft} days`;
+    } else {
+      detailedDesignNote.textContent = 'Submitted on 15/03/2024';
+      detailedDesignLink.style.display = 'block';
+    }
+    if (finalReportDateLeft > 0) {
+      finalReportNote.textContent = `Available in ${finalReportDateLeft} days`;
+    } else {
+      finalReportNote.textContent = 'Submitted on 10/05/2024';
+      finalReportLink.style.display = 'block';
+    }
+    if (springPresentationDateLeft > 0) {
+      springPresentationNote.textContent = `Available in May 2024`;
+    } else {
+      springPresentationNote.textContent = 'Submitted on 16/05/2024';
+      springPresentationLink.style.display = 'block';
     }
   }
 

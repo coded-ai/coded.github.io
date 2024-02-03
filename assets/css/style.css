@@ -1,21 +1,18 @@
-/**
-* Template Name: Squadfree
-* Updated: Sep 18 2023 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/squadfree-free-bootstrap-template-creative/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+ 
+  font-family: 'Noto Sans', sans-serif;
   color: #444444;
 }
+
+
 .custom-col {
-  flex: 0 0 20%; /* Set base width to 20% */
-  max-width: 20%; /* Limit maximum width to 20% */
+  flex: 0 0 20%; 
+  max-width: 20%; 
 }
 a {
   text-decoration: none;
@@ -33,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 #main {
@@ -113,7 +110,7 @@ h6 {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   display: inline-block;
   text-transform: uppercase;
   vertical-align: middle;
@@ -167,7 +164,7 @@ h6 {
   justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -838,7 +835,7 @@ section {
   margin-top: 20px;
   color: #49788c;
   font-size: 15px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   transition: ease-in-out 0.3s;
 }
 
@@ -866,7 +863,7 @@ section {
 }
 
 .cta .cta-btn {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 16px;
@@ -1169,7 +1166,7 @@ section {
   padding: 20px 0;
   color: #2f4d5a;
   box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  max-height: 95px;
+  max-height: 100px;
   overflow: hidden;
   transition: max-height 0.5s ease-in-out;
 }
@@ -1309,7 +1306,7 @@ section {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   display: inline-block;
   text-transform: uppercase;
   vertical-align: middle;
@@ -1319,7 +1316,7 @@ section {
 {
   font-size: 12px;
   margin-top: 10px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   font-style: italic;
 
 }
@@ -1330,7 +1327,7 @@ section {
   line-height: 1;
   font-weight: 700;
   letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   display: inline-block;
   text-transform: uppercase;
   vertical-align: middle;
