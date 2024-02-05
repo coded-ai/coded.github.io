@@ -1384,7 +1384,8 @@ section {
   border-radius: 50%; /* Circular shape */
   font-size: 12px; /* Adjust font size as needed */
   color: white !important; /* Text color */
-  background: #409cc5;
+  margin-right: 0.2vh !important;
+  background: #385b6b;
   border-color: white;
   
 }
