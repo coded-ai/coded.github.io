@@ -244,9 +244,9 @@
     const requirementsDate = new Date(2023, 11, 8); // December 8 - Req report deadline + 1 day
     const presentationDate = new Date(2023, 11, 20); // December 20 - Presentation deadline + 1 day
 
-    const detailedDesignDate = new Date(2024, 3, 16); // March 16 - Detailed Report deadline + 1 day
-    const finalReportDate = new Date(2024, 5, 11); // May 11 - Final Report deadline + 1 day 
-    const springPresentationDate = new Date(2024, 5, 17); // Last Day of Semester + 1 Day
+    const detailedDesignDate = new Date(2024, 2, 16); // March 16 - Detailed Report deadline + 1 day
+    const finalReportDate = new Date(2024, 4, 11); // May 11 - Final Report deadline + 1 day 
+    const springPresentationDate = new Date(2024, 4, 17); // Last Day of Semester + 1 Day
     
     const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
     const requirementsTimeLeft = Math.ceil((requirementsDate - now) / (1000 * 60 * 60 * 24));
