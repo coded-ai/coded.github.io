@@ -244,7 +244,7 @@
     const requirementsDate = new Date(2023, 11, 8, 10, 0); // December 8 at 10:00 - Req report deadline 
     const presentationDate = new Date(2023, 11, 20, 10, 0); // December 20 at 10:00 - Presentation deadline
     
-    const detailedDesignDate = new Date(2024, 2, 15, 10, 0); // March 15 at 10:00 - Detailed Report deadline 
+    const detailedDesignDate = new Date(2024, 2, 13, 10, 0); // March 15 at 10:00 - Detailed Report deadline 
     const finalReportDate = new Date(2024, 4, 11, 10, 0); // May 11 at 10:00 - Final Report deadline 
     const springPresentationDate = new Date(2024, 4, 17, 10, 0); // Last Day of Semester at 10:00 
     
@@ -265,7 +265,7 @@
     const specificationLink = document.getElementById("specification-link");
     const requirementsLink = document.getElementById("requirements-link");
     const presentationLink = document.getElementById("presentation-link");
-    const detailedDesignLink = document.getElementById("detailed-design-link");
+    const detailedDesignLink = document.getElementById("detailed-design-report-link");
     const finalReportLink = document.getElementById("final-report-link");
     const springPresentationLink = document.getElementById("spring-presentation-link");
 
@@ -318,7 +318,7 @@
       {deadline: new Date(2023, 10, 17, 10, 0), labelSelector: '.new-label-specification'}, // November 17 at 10:00 - Spec report deadline
       {deadline: new Date(2023, 11, 8, 10, 0), labelSelector: '.new-label-requirements'}, // December 8 at 10:00 - Req report deadline
       {deadline: new Date(2023, 11, 20, 10, 0), labelSelector: '.new-label-presentation'}, // December 20 at 10:00 - Presentation deadline
-      {deadline: new Date(2024, 2, 15, 10, 0), labelSelector: '.new-label-detailedDesign'}, // March 15 at 10:00 - Detailed Report deadline
+      {deadline: new Date(2024, 2, 14, 10, 0), labelSelector: '.new-label-detailedDesign'}, // March 15 at 10:00 - Detailed Report deadline
       {deadline: new Date(2024, 4, 11, 10, 0), labelSelector: '.new-label-finalReport'}, // May 11 at 10:00 - Final Report deadline
       {deadline: new Date(2024, 4, 17, 10, 0), labelSelector: '.new-label-springPresentation'}, // May 17 at 10:00 - Last Day of Semester
   ];
