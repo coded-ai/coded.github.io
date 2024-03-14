@@ -7,13 +7,20 @@ body {
     color: #333;
 }
 
-h1, h2 {
-    color: #0056b3;
+h1 {
+    color: #e74c3c;
+    margin: 1vh; /* Adjusts the margin to ensure alignment */
+    font-size: 36px; 
+}
+
+h2 {
+    color: #e74c3c;
+    
 }
 
 h4 {
     margin-bottom: 10px;
-    color: #007bff;
+    color: #67b0d1;
 }
 
 p, li {
@@ -46,7 +53,7 @@ a:hover {
 
 /* Styling the contact email */
 .email-link {
-    background-color: #007bff;
+    background-color: #e74c3c;
     color: #ffffff;
     padding: 5px 10px;
     text-decoration: none;
@@ -56,3 +63,44 @@ a:hover {
 .email-link:hover {
     background-color: #0056b3;
 }
+
+.back-button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #67b0d1;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.back-button:hover, .back-button:focus {
+    background-color: #e74c3c;
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+
+.back-button:active {
+    transform: translateY(1px);
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-logo {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+}
+
