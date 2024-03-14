@@ -240,13 +240,14 @@
     const now = new Date();
 
     
-    const specificationDate = new Date(2023, 10, 17);  // November 17 -Spec report deadline + 1 day
-    const requirementsDate = new Date(2023, 11, 8); // December 8 - Req report deadline + 1 day
-    const presentationDate = new Date(2023, 11, 20); // December 20 - Presentation deadline + 1 day
-
-    const detailedDesignDate = new Date(2024, 2, 16); // March 16 - Detailed Report deadline + 1 day
-    const finalReportDate = new Date(2024, 4, 11); // May 11 - Final Report deadline + 1 day 
-    const springPresentationDate = new Date(2024, 4, 17); // Last Day of Semester + 1 Day
+    const specificationDate = new Date(2023, 10, 17, 10, 0);  // November 17 at 10:00 - Spec report deadline 
+    const requirementsDate = new Date(2023, 11, 8, 10, 0); // December 8 at 10:00 - Req report deadline 
+    const presentationDate = new Date(2023, 11, 20, 10, 0); // December 20 at 10:00 - Presentation deadline
+    
+    const detailedDesignDate = new Date(2024, 2, 15, 10, 0); // March 15 at 10:00 - Detailed Report deadline 
+    const finalReportDate = new Date(2024, 4, 11, 10, 0); // May 11 at 10:00 - Final Report deadline 
+    const springPresentationDate = new Date(2024, 4, 17, 10, 0); // Last Day of Semester at 10:00 
+    
     
     const specificationTimeLeft = Math.ceil((specificationDate - now) / (1000 * 60 * 60 * 24));
     const requirementsTimeLeft = Math.ceil((requirementsDate - now) / (1000 * 60 * 60 * 24));
@@ -310,6 +311,33 @@
   // Update time left immediately and then every day
   updateTimeLeft();
   setInterval(updateTimeLeft, 24 * 60 * 60 * 1000);
+
+  document.addEventListener("DOMContentLoaded", function() {
+   
+    const deadlines = [
+      {deadline: new Date(2023, 10, 17, 10, 0), labelSelector: '.new-label-specification'}, // November 17 at 10:00 - Spec report deadline
+      {deadline: new Date(2023, 11, 8, 10, 0), labelSelector: '.new-label-requirements'}, // December 8 at 10:00 - Req report deadline
+      {deadline: new Date(2023, 11, 20, 10, 0), labelSelector: '.new-label-presentation'}, // December 20 at 10:00 - Presentation deadline
+      {deadline: new Date(2024, 2, 15, 10, 0), labelSelector: '.new-label-detailedDesign'}, // March 15 at 10:00 - Detailed Report deadline
+      {deadline: new Date(2024, 4, 11, 10, 0), labelSelector: '.new-label-finalReport'}, // May 11 at 10:00 - Final Report deadline
+      {deadline: new Date(2024, 4, 17, 10, 0), labelSelector: '.new-label-springPresentation'}, // May 17 at 10:00 - Last Day of Semester
+  ];
+  
+    const currentDate = new Date();
+
+    // Iterate over each deadline
+    deadlines.forEach(({deadline, labelSelector}) => {
+        const differenceInDays = (currentDate - deadline) / (1000 * 60 * 60 * 24);
+
+        
+        if (differenceInDays >= 0 && differenceInDays <= 7) {
+         
+            document.querySelectorAll(labelSelector).forEach(label => {
+                label.style.display = 'block';
+            });
+        }
+    });
+});
 
 
   /**

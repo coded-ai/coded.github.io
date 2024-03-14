@@ -1394,8 +1394,47 @@ section {
   height: auto;
 }
 
+.new-label {
+  display: inline-block; 
+  margin-left: 10px; 
+  padding: 4px 10px;
+  color: #fff;
+  background-image: linear-gradient(to right, #7b4397, blue);
+  border-radius: 0.8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 0.8rem;
+  vertical-align: middle;
+  animation: waveAnimation 2s ease-in-out infinite;
+}
 
-/* Additional custom styling if needed */
+.view-and-label {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes waveAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+/* Example of overriding cookie consent banner styles */
+.cc-window, .cc-banner, .cc-type-info, .cc-theme-dark {
+  background-color: #333 !important; /* Change background color */
+  color: #fff !important; /* Change text color */
+}
+
+.cc-btn, .cc-allow, .cc-deny, .cc-dismiss {
+  background-color: #4CAF50 !important; /* Change button background color */
+  color: #ffffff !important; /* Change button text color */
+  border-radius: 5px !important; /* Add border radius to buttons */
+}
 
 
 #footer .credits {
