@@ -27,11 +27,32 @@
   
   </head>
 <body>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const languageSelect = document.getElementById('language-select');
+            const currentUrl = window.location.href;
+            languageSelect.value = currentUrl.includes('-tr.html') ? 'tr' : 'en';
+            
+            languageSelect.addEventListener('change', function() {
+                const selectedLanguage = this.value;
+                if (selectedLanguage === 'tr') {
+                    window.location.href = 'https://coded-ai.github.io/coded.github.io/cookie-policy-tr.html';
+                } else if (selectedLanguage === 'en') {
+                     window.location.href = 'https://coded-ai.github.io/coded.github.io/cookie-policy.html';
+                }
+            });
+        });
+    </script>
+        
 <link rel="icon" href="assets/img/logo.png" type="image/x-icon">
 <div class="container">
     <div class="header-container">
-        <img src="assets/img/colotful_logo.png" alt="Company Logo" class="company-logo">
+        <img src="assets/img/colorful_logo.png" alt="Company Logo" class="company-logo">
         <h1>CODED | Cookies Policy</h1>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="tr">Türkçe</option>
+        </select>
     </div>    
     <p>Last updated: March 14, 2024</p>
     <h2>Interpretation and Definitions</h2>

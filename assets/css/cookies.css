@@ -9,8 +9,9 @@ body {
 
 h1 {
     color: #e74c3c;
-    margin: 1vh; /* Adjusts the margin to ensure alignment */
+    margin: 1vh;
     font-size: 36px; 
+    margin-right: 25vh;
 }
 
 h2 {
@@ -104,3 +105,8 @@ a:hover {
     max-height: 40px;
 }
 
+#language-select {
+    margin-left: 20px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
