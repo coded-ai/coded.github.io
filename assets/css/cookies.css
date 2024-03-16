@@ -5,6 +5,11 @@ body {
     padding: 20px;
     background-color: #f4f4f4;
     color: #333;
+    background-image: url('../img/shadergradient.gif');
+     background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
 h1 {
