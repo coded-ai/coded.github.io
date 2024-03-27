@@ -285,7 +285,7 @@
     if (presentationTimeLeft > 0) {
       presentationNote.textContent = `Available in ${presentationTimeLeft} days`;
     } else {
-      presentationNote.textContent = 'Presented on 5/12/2023';
+      presentationNote.textContent = 'Presented on 05/12/2023';
       presentationLink.style.display = 'block';
     }
     if (detailedDesignDateLeft > 0) {
