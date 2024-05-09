@@ -245,7 +245,7 @@
     const presentationDate = new Date(2023, 11, 20, 10, 0); // December 20 at 10:00 - Presentation deadline
     
     const detailedDesignDate = new Date(2024, 2, 15, 10, 0); // March 15 at 10:00 - Detailed Report deadline 
-    const finalReportDate = new Date(2024, 4, 11, 10, 0); // May 11 at 10:00 - Final Report deadline 
+    const finalReportDate = new Date(2024, 4, 14, 10, 0); // May 14 at 10:00 - Final Report deadline
     const springPresentationDate = new Date(2024, 4, 17, 10, 0); // Last Day of Semester at 10:00 
     
     
