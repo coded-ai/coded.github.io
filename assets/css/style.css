@@ -5,8 +5,8 @@
 --------------------------------------------------------------*/
 body {
  
-  font-family: 'Noto Sans', sans-serif;
-  color: #444444;
+   font-family: 'Circular', sans-serif, Arial, Helvetica;
+  color: black;
 }
 
 
@@ -48,7 +48,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 998;
-  background: #67b0d1;
+  background: #C307F9;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -57,7 +57,7 @@ h6 {
 
 .back-to-top i {
   font-size: 24px;
-  color: #fff;
+  color: white;
   line-height: 0;
 }
 
@@ -96,7 +96,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(55, 142, 181, 0.9);
+  background: #3c3c50;
   padding: 12px;
 }
 
@@ -143,6 +143,7 @@ h6 {
 .navbar {
   padding: 0;
   position: static;
+
 }
 
 .navbar ul {
@@ -472,7 +473,7 @@ h6 {
 }
 
 #hero h1 span {
-  color: #e74c3c; /* Highlight color for the 'coded.' part */
+  color: #C307F9; /* Highlight color for the 'coded.' part */
 }
 
 #hero h2 {
@@ -529,7 +530,7 @@ section {
 }
 
 .section-bg {
-  background-color: #f4f9fc;
+  background-color: white;
 }
 
 .section-title {
@@ -542,7 +543,7 @@ section {
   font-weight: bold;
   position: relative;
   margin-bottom: 30px;
-  color: #2f4d5a;
+  color: #3c3c50;
   z-index: 2;
 }
 
@@ -617,7 +618,7 @@ section {
   padding: 15px 20px; /* Padding around the text for space */
   border-radius: 10px; /* Rounded corners for aesthetics */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* A subtle shadow for depth */
-  border-left: 5px solid #e74c3c; /* A left border for added emphasis */
+  border-left: 5px solid #C307F9; /* A left border for added emphasis */
 }
 
 /*--------------------------------------------------------------
@@ -663,7 +664,7 @@ section {
 
 .about .content .about-btn {
   display: inline-block;
-  background: #67b0d1;
+  background: #C307F9;
   padding: 6px 44px 8px 30px;
   color: #fff;
   border-radius: 50px;
@@ -697,7 +698,7 @@ section {
 
 .about .icon-boxes .icon-box i {
   font-size: 2em; 
-  color: #e74c3c; 
+  color: #C307F9;
   margin-bottom: 15px;
 }
 
@@ -1448,4 +1449,49 @@ section {
   #footer .footer-top .footer-info {
     margin: -20px 0 30px 0;
   }
+}
+
+.custom-footer {
+  background-color: white;
+}
+
+.custom-footer__logo-image {
+  max-width: 40px;
+  height: auto;
+}
+
+.custom-footer__description {
+  margin-bottom: 20px;
+}
+
+.custom-footer__heading {
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.custom-footer__links a {
+  color: #555;
+  text-decoration: none;
+}
+
+.custom-footer__links a:hover {
+  text-decoration: underline;
+}
+
+.custom-footer__tos {
+  color: #777;
+}
+
+
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+  .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+.custom-footer__logo span {
+    font-weight: bold;
 }
