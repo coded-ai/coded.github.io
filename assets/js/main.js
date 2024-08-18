@@ -236,6 +236,21 @@
     }
   });
 
+  /**
+   * Hide top banner when close icon is clicked
+   */
+  const bannerClose = select('#banner-close');
+  if (bannerClose) {
+    on('click', '#banner-close', function() {
+      const topBanner = select('#top-banner');
+      const header = select('#header');
+      if (topBanner) {
+        topBanner.style.display = 'none';
+        header.style.top = '0';
+      }
+    });
+  }
+
   function updateTimeLeft() {
     const now = new Date();
 

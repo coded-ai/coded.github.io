@@ -130,39 +130,68 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
-    <div class="container d-flex align-items-center justify-content-between position-relative">
-
-      <div class="logo">
-        <img src="assets/img/colorful_logo.png" alt="Logo" width="30" height="30" display>
-        <h1 class="text-light"><a href="index.html"><span>CODED.</span></a></h1>
+    <!-- Top Banner -->
+    <div id="top-banner" style="
+  background: linear-gradient(90deg, #C307F9 0%, #8A07F9 100%);
+  padding: 15px 20px;
+  text-align: center;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+">
+        CODED has won the Innovation Award at Bilkent University CS Fair 2024!
+        <a href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" style="
+    color: #FFD700;
+    text-decoration: underline;
+    margin-left: 10px;
+    font-weight: bold;
+  ">Learn more</a>
+        <span id="banner-close" style="
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #FFD700;
+  ">&times;</span>
     </div>
-    
-    
 
-      <link rel="icon" href="assets/img/colorful_logo.png" type="image/x-icon">
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About </a></li>
-          <li><a class="nav-link scrollto" href="#services">Our Reports</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+    <!-- Adjust header top position to be below the banner -->
+    <header id="header" class="fixed-top header-transparent" style="top: 50px; z-index: 999;">
+        <div class="container d-flex align-items-center justify-content-between position-relative">
+            <div class="logo">
+                <img src="assets/img/colorful_logo.png" alt="Logo" width="30" height="30">
+                <h1 class="text-light"><a href="index.html"><span>CODED.</span></a></h1>
+            </div>
 
-    </div>
-  </header><!-- End Header -->
+            <link rel="icon" href="assets/img/colorful_logo.png" type="image/x-icon">
 
-  <!-- ======= Hero Section ======= -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#services">Our Reports</a></li>
+                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+
+<!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
       <h1>Welcome to <span>CODED.</span></h1>
       <h2>Your Virtual Lab Tutor.</h2>
-      <script src="script.js"></script>
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -180,7 +209,10 @@
               <p class="highlight-text">
                 CODED is a web application for CS and CTIS labs, offering an integrated chatbot for lab queries and guiding students to write clean code while detecting potential issues.
               </p>
-              <a href="#team" class="about-btn">Meet with the team <i class="bx bx-chevron-right"></i></a>
+                <a href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" class="about-btn">
+                    Try CODED AI on ChatGPT!
+                    <i class="bx bx-chevron-right"></i>
+                </a>
               <br>
               <a href="https://github.com/coded-ai" target="_blank" class="github-btn">Follow us on GitHub <i class="bi bi-github"></i></a>
             </div>
@@ -229,7 +261,7 @@
                   <div class="icon-box" data-aos="zoom-in-left">
                       <div class="icon"><i class="bi bi-card-checklist" style="color: #ff689b;"></i></div>
                       <h4 class="title">
-                          <a href="assets/reports/T2322_Project_Specification_Document.pdf" target="_blank">
+                          <a href="assets/reports/T2322_Project_Specification_Document_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
                               Project Specification Report
@@ -248,7 +280,7 @@
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
                       <div class="icon"><i class="bi bi-clipboard-data" style="color: #e9bf06;"></i></div>
                       <h4 class="title">
-                          <a href="assets/reports/T2322_Analysis_and_Requirements_Report.pdf" target="_blank">
+                          <a href="assets/reports/T2322_Analysis_and_Requirements_Report_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
                               Analysis And Requirements Report
@@ -267,7 +299,7 @@
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                       <div class="icon"><i class="bi bi-file-slides" style="color: #3fcdc7;"></i></div>
                       <h4 class="title">
-                          <a href="assets/reports/T2322_Fall_Semester_Demo.pdf" target="_blank">
+                          <a href="assets/reports/T2322_Fall_Semester_Demo_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-ppt-fill" style="color: orange;"></i>
                               Fall Semester Presentation & Demo
@@ -287,7 +319,7 @@
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                       <div class="icon"><i class="bi bi-pencil-square" style="color: #4e91fc;"></i></div>
                       <h4 class="title">
-                          <a href="assets/reports/T2322_Detailed_Design_Report.pdf" target="_blank">
+                          <a href="assets/reports/T2322_Detailed_Design_Report_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
                               Detailed Design Report
@@ -304,7 +336,7 @@
               <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                   <div class="icon"><i class="bi bi-easel" style="color: #a23bf2;"></i></div>
                   <h4 class="title">
-                    <a href="assets/reports/T2322-Spring-Semester-Demo.pdf" target="_blank">
+                    <a href="assets/reports/T2322-Spring-Semester-Demo_encrypted.pdf" target="_blank">
                       <!-- PDF Icon -->
                       <i class="bi bi-file-earmark-ppt-fill" style="color: orange;"></i>
                       Final  Presentation & Demo
@@ -321,7 +353,7 @@
                 <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                     <div class="icon"><i class="bi bi-journal-check" style="color: #fca03b;"></i></div>
                     <h4 class="title">
-                        <a href="assets/reports/T2322_Final_Report.pdf" target="_blank">
+                        <a href="assets/reports/T2322_Final_Report_encrypted.pdf" target="_blank">
                             <!-- PDF Icon -->
                             <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
                             Final Report
