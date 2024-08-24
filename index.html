@@ -5,16 +5,11 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>CODED.</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <title>CODED - Renovating Education</title>
+    <meta content="CODED is the ultimate virtual lab tutor designed for Computer Science and CTIS students at Bilkent University. Offering a suite of smart tools including an AI-powered chatbot, advanced similarity check, clean code evaluator, and automated test case runner, CODED helps you write cleaner, more efficient code with ease." name="description">
+    <meta content="CODED, virtual lab tutor, CS labs, CTIS labs, Bilkent University, AI chatbot, code similarity check, clean code evaluator, test case automation, student coding tools, smart coding solutions, educational technology, programming assistance, coding efficiency" name="keywords">
 
-
-  <!-- Google Fonts -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,700">
-
-
-  <!-- Vendor CSS Files -->
+    <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -24,145 +19,18 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-  <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f0592860-6d28-4752-b439-f06a80ba2d6a" data-blockingmode="auto" type="text/javascript"></script>
-  <script src="https://form.jotform.com/static/feedback2.js"></script>
-  <script>
-    new JotformFeedback({
-      
-  type: 2,
-  width: 700,
-  height: 500,
-  fontColor: "#FFFFFF",
-  background: "#FB8F8B",
-  isCardForm: false,
-  formId: "240764186817970"
-  ,
-      buttonText: "Feedback",
-      buttonSide: "left",
-      buttonAlign: "center",
-      base: "https://form.jotform.com/",
-    });
-  </script>
-  <script type="text/javascript">
-    var ifr = document.getElementById("lightbox-240764186817970");
-    if (ifr) {
-      var src = ifr.src;
-      var iframeParams = [];
-      if (window.location.href && window.location.href.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-      }
-      if (src && src.indexOf("?") > -1) {
-        iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-        src = src.substr(0, src.indexOf("?"))
-      }
-      iframeParams.push("isIframeEmbed=1");
-      ifr.src = src + "?" + iframeParams.join('&');
-    }
-    window.handleIFrameMessage = function(e) {
-      if (typeof e.data === 'object') { return; }
-      var args = e.data.split(":");
-      if (args.length > 2) { iframe = document.getElementById("lightbox-" + args[(args.length - 1)]); } else { iframe = document.getElementById("lightbox"); }
-      if (!iframe) { return; }
-      switch (args[0]) {
-        case "scrollIntoView":
-          iframe.scrollIntoView();
-          break;
-        case "setHeight":
-          iframe.style.height = args[1] + "px";
-          if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-            iframe.style.minHeight = args[1] + "px";
-          }
-          break;
-        case "collapseErrorPage":
-          if (iframe.clientHeight > window.innerHeight) {
-            iframe.style.height = window.innerHeight + "px";
-          }
-          break;
-        case "reloadPage":
-          window.location.reload();
-          break;
-        case "loadScript":
-          if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-          var src = args[1];
-          if (args.length > 3) {
-              src = args[1] + ':' + args[2];
-          }
-          var script = document.createElement('script');
-          script.src = src;
-          script.type = 'text/javascript';
-          document.body.appendChild(script);
-          break;
-        case "exitFullscreen":
-          if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-          else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-          else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-          else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-          else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-          break;
-      }
-      var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-      if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-        var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-        iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-      }
-    };
-    window.isPermitted = function(originUrl, whitelisted_domains) {
-      var url = document.createElement('a');
-      url.href = originUrl;
-      var hostname = url.hostname;
-      var result = false;
-      if( typeof hostname !== 'undefined' ) {
-        whitelisted_domains.forEach(function(element) {
-            if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-                result = true;
-            }
-        });
-        return result;
-      }
-    };
-    if (window.addEventListener) {
-      window.addEventListener("message", handleIFrameMessage, false);
-    } else if (window.attachEvent) {
-      window.attachEvent("onmessage", handleIFrameMessage);
-    }
-    </script>
 </head>
 
 <body>
 
     <!-- Top Banner -->
-    <div id="top-banner" style="
-  background: linear-gradient(90deg, #C307F9 0%, #8A07F9 100%);
-  padding: 15px 20px;
-  text-align: center;
-  font-weight: bold;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  color: white;
-  font-family: 'Noto Sans', sans-serif;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-">
+    <div id="top-banner">
         CODED has won the Innovation Award at Bilkent University CS Fair 2024!
-        <a href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" style="
-    color: #FFD700;
-    text-decoration: underline;
-    margin-left: 10px;
-    font-weight: bold;
-  ">Learn more</a>
-        <span id="banner-close" style="
-    position: absolute;
-    right: 20px;
-    top: 10px;
-    cursor: pointer;
-    font-size: 24px;
-    color: #FFD700;
-  ">&times;</span>
+        <a href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" class="banner-link">Learn more</a>
+        <span id="banner-close" class="banner-close">&times;</span>
     </div>
+    <!-- end of Top Banner -->
 
-
-    <!-- Adjust header top position to be below the banner -->
     <header id="header" class="fixed-top header-transparent" style="top: 50px; z-index: 999;">
         <div class="container d-flex align-items-center justify-content-between position-relative">
             <div class="logo">
@@ -176,7 +44,7 @@
                 <ul>
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Our Reports</a></li>
+                    <li><a class="nav-link scrollto" href="#reports">Academic Reports</a></li>
                     <li><a class="nav-link scrollto" href="#team">Team</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
                 </ul>
@@ -191,7 +59,7 @@
   <section id="hero">
     <div class="hero-container" data-aos="fade-up">
       <h1>Welcome to <span>CODED.</span></h1>
-      <h2>Your Virtual Lab Tutor.</h2>
+      <h2>Renovating Learning with AI.</h2>
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -201,23 +69,26 @@
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container">
-
         <div class="row no-gutters">
-          <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
-            <div class="content">
-              <h3>What is CODED?</h3>
-              <p class="highlight-text">
-                CODED is a web application for CS and CTIS labs, offering an integrated chatbot for lab queries and guiding students to write clean code while detecting potential issues.
-              </p>
-                <a href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" class="about-btn">
-                    Try CODED AI on ChatGPT!
-                    <i class="bx bx-chevron-right"></i>
-                </a>
-              <br>
-              <a href="https://github.com/coded-ai" target="_blank" class="github-btn">Follow us on GitHub <i class="bi bi-github"></i></a>
+            <div class="content col-xl-5 d-flex align-items-stretch" data-aos="fade-up">
+                <div class="content">
+                    <h3>What is CODED?</h3>
+                    <p class="highlight-text">
+                        CODED is a web application for CS and CTIS labs, offering an integrated chatbot for lab queries and guiding students to write clean code while detecting potential issues.
+                    </p>
+                    <a href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" class="btn-standard about-btn">
+                        Try CODED AI on ChatGPT!
+                        <i class="bx bx-chevron-right"></i>
+                    </a>
+                    <br>
+                    <a href="https://github.com/coded-ai" target="_blank" class="btn-standard github-btn">
+                        Follow us on GitHub
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
             </div>
-          </div>
-          <div class="col-xl-7 d-flex align-items-stretch">
+
+            <div class="col-xl-7 d-flex align-items-stretch">
             <div class="icon-boxes d-flex flex-column justify-content-center">
                 <div class="row">
                     <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
@@ -243,15 +114,15 @@
                 </div>
             </div><!-- End .content-->
         </div>
-
       </div>
     </section><!-- End About Section -->
 
-    <section id="services" class="services">
+      <!-- ======= Reports Section ======= -->
+    <section id="reports" class="reports">
       <div class="container">
   
           <div class="section-title" data-aos="fade-in" data-aos-delay="200">
-              <h2>Our Reports</h2>
+              <h2>Academic Reports</h2>
           </div>
       
           <!-- First Row -->
@@ -313,7 +184,7 @@
                   </div>
               </div>
           </div>
-          <!-- Second Row with inline style for top margin -->
+
         <div class="row" style="margin-top: 30px;">
               <div class="col-md-4">
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
@@ -367,130 +238,138 @@
                 </div>
             </div>
           </div>
-        </div> 
-  
-      </div>
-  </section>
-  <!-- End Services Section -->
-  
-  
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
-      <div class="container">
-        <div class="section-title" data-aos="fade-in" data-aos-delay="100">
-          <h2>Team</h2>
         </div>
-        <div class="row">
-          <div class="row">
-            <div class="custom-col col-md-6">
-                <div class="member" data-aos="fade-up" data-aos-delay="100">
-                    <div class="pic"><img src="assets/img/team/beyza.png" class="img-fluid" alt=""></div>
-                    <div class="member-info">
-                        <h4>Beyza Çağlar</h4>
-                        <span>Senior Student at Bilkent University</span>
-                        <div class="social">
-                          <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1TyhXPujxnOhMgnQ9U40h1nj0d6e1HHgACXeUuCLVQLw/edit?usp=sharing" target="_blank" aria-label="Larry Parker Twitter Profile">LB</i></a>
-                            <a href="https://github.com/beyzacaglar" target="_blank"><i class="bi bi-github"></i></a>
-                            <a href="https://www.linkedin.com/in/beyza-%C3%A7a%C4%9Flar-878150226/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="custom-col col-md-6">
-              <div class="member" data-aos="fade-up" data-aos-delay="100">
-                  <div class="pic"><img src="assets/img/team/emre.jpg" class="img-fluid" alt=""></div>
-                  <div class="member-info">
-                      <h4>Emre Karataş</h4>
-                      <span>Senior Student at Bilkent University</span>
-                      <div class="social">
-                        <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1MxS2NhaodAt2LuBUwPReZOBAxqjBngB8kAVXFcUU87A/edit?usp=sharing"  target="_blank" aria-label="Larry Parker Twitter Profile">LB</i></a>
-                        <a href="https://github.com/emre-karatas" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/emre-karatas00/" target="_blank"><i class="bi bi-linkedin"></i></a>
+    </section>
+    <!-- End Services Section -->
+
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team">
+          <div class="container">
+              <div class="section-title" data-aos="fade-in" data-aos-delay="100">
+                  <h2>Team</h2>
+              </div>
+
+              <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="100">
+                          <div class="pic">
+                              <img src="assets/img/team/beyza.png" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Beyza Çağlar</h4>
+                              <span>Senior Student at Bilkent University</span>
+                              <div class="social">
+                                  <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1TyhXPujxnOhMgnQ9U40h1nj0d6e1HHgACXeUuCLVQLw/edit?usp=sharing" target="_blank" aria-label="Beyza Caglar's Document">LB</a>
+                                  <a href="https://github.com/beyzacaglar" target="_blank"><i class="bi bi-github"></i></a>
+                                  <a href="https://www.linkedin.com/in/beyza-%C3%A7a%C4%9Flar-878150226/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="200">
+                          <div class="pic">
+                              <img src="assets/img/team/emre.jpg" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Emre Karataş</h4>
+                              <span>Senior Student at Bilkent University</span>
+                              <div class="social">
+                                  <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1MxS2NhaodAt2LuBUwPReZOBAxqjBngB8kAVXFcUU87A/edit?usp=sharing" target="_blank" aria-label="Emre Karatas' Document">LB</a>
+                                  <a href="https://github.com/emre-karatas" target="_blank"><i class="bi bi-github"></i></a>
+                                  <a href="https://www.linkedin.com/in/emre-karatas00/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="300">
+                          <div class="pic">
+                              <img src="assets/img/team/selin.png" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Selin Bahar Gündoğar</h4>
+                              <span>Senior Student at Bilkent University</span>
+                              <div class="social">
+                                  <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1rPeWysRyB1lMOCQRhYD33eqgVrmU0l1_5sIsxi8wrf4/edit?usp=sharing" target="_blank" aria-label="Selin Bahar Gundogar's Document">LB</a>
+                                  <a href="https://github.com/SelinBaharGundogar" target="_blank"><i class="bi bi-github"></i></a>
+                                  <a href="https://www.linkedin.com/in/selinbahargundogar/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="400">
+                          <div class="pic">
+                              <img src="assets/img/team/zeyneph.jpg" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Zeynep Hanife Akgül</h4>
+                              <span>Senior Student at Bilkent University</span>
+                              <div class="social">
+                                  <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1o0-W7-ThsX_pyBFF4Nv7qce1G83-SxgAi5nwoVxTSaI/edit?usp=sharing" target="_blank" aria-label="Zeynep Hanife Akgul's Document">LB</a>
+                                  <a href="https://github.com/zeynephakgul" target="_blank"><i class="bi bi-github"></i></a>
+                                  <a href="https://www.linkedin.com/in/zeynep-hanife-akg%C3%BCl/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="500">
+                          <div class="pic">
+                              <img src="assets/img/team/zeynepselcen.png" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Zeynep Selcen Öztunç</h4>
+                              <span>Senior Student at Bilkent University</span>
+                              <div class="social">
+                                  <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1XGwikDTDHycC_pSGIrCbQK_SjXvv7gdW7tkd7Ri3Vp4/edit?usp=sharing" target="_blank" aria-label="Zeynep Selcen Oztunc's Document">LB</a>
+                                  <a href="https://github.com/zeynepoztunc" target="_blank"><i class="bi bi-github"></i></a>
+                                  <a href="https://www.linkedin.com/in/zeynep-selcen-%C3%B6ztun%C3%A7-000300196/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="600">
+                          <div class="pic">
+                              <img src="assets/img/team/guvenir.jpg" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Halil Altay Güvenir, Prof.</h4>
+                              <span>Supervisor</span>
+                              <div class="social">
+                                  <a href="https://www.linkedin.com/in/guvenir/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                  <a href="http://www.cs.bilkent.edu.tr/~guvenir/" target="_blank"><i class="bi bi-globe"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6">
+                      <div class="member" data-aos="fade-up" data-aos-delay="700">
+                          <div class="pic">
+                              <img src="assets/img/team/bora.jpg" class="img-fluid team-img" alt="">
+                          </div>
+                          <div class="member-info">
+                              <h4>Bora Güngören</h4>
+                              <span>Innovation Expert</span>
+                              <div class="social">
+                                  <a href="https://github.com/boragungoren-portakalteknoloji" target="_blank"><i class="bi bi-github"></i></a>
+                                  <a href="https://www.linkedin.com/in/boragungoren/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                              </div>
+                          </div>
                       </div>
                   </div>
               </div>
           </div>
-          <div class="custom-col col-md-6">
-            <div class="member" data-aos="fade-up" data-aos-delay="100">
-                <div class="pic"><img src="assets/img/team/selin.png" class="img-fluid" alt=""></div>
-                <div class="member-info">
-                    <h4>Selin Bahar Gündoğar</h4>
-                    <span>Senior Student at Bilkent University</span>
-                    <div class="social">
-                      <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1rPeWysRyB1lMOCQRhYD33eqgVrmU0l1_5sIsxi8wrf4/edit?usp=sharing" target="_blank" aria-label="Larry Parker Twitter Profile">LB</i></a>
-                        <a href="https://github.com/SelinBaharGundogar" target="_blank"><i class="bi bi-github"></i></a>
-                        <a href="https://www.linkedin.com/in/selinbahargundogar/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="custom-col col-md-6">
-          <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/zeyneph.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                  <h4>Zeynep Hanife Akgül</h4>
-                  <span>Senior Student at Bilkent University</span>
-                  <div class="social">
-                    <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1o0-W7-ThsX_pyBFF4Nv7qce1G83-SxgAi5nwoVxTSaI/edit?usp=sharing"  target="_blank" aria-label="Larry Parker Twitter Profile">LB</i></a>                  
-                      <a href="https://github.com/zeynephakgul" target="_blank"><i class="bi bi-github"></i></a>
-                      <a href="https://www.linkedin.com/in/zeynep-hanife-akg%C3%BCl/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  </div>
-              </div>
-          </div>
-      </div>
-      <div class="custom-col col-md-6">
-        <div class="member" data-aos="fade-up" data-aos-delay="100">
-            <div class="pic"><img src="assets/img/team/zeynepselcen.png" class="img-fluid" alt=""></div>
-            <div class="member-info">
-                <h4>Zeynep Selcen Öztunç</h4>
-                <span>Senior Student at Bilkent University</span>
-                <div class="social">
-                  <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1XGwikDTDHycC_pSGIrCbQK_SjXvv7gdW7tkd7Ri3Vp4/edit?usp=sharing"  target="_blank" aria-label="Larry Parker Twitter Profile">LB</i></a>
-                   <a href="https://github.com/zeynepoztunc" target="_blank"><i class="bi bi-github"></i></a>
-                    <a href="https://www.linkedin.com/in/zeynep-selcen-%C3%B6ztun%C3%A7-000300196/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row justify-content-center" style="margin-top: 50px;"> 
-      <div class="custom-col col-md-6">
-        <div class="member" data-aos="fade-up" data-aos-delay="100">
-          <div class="pic"><img src="assets/img/team/guvenir.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Halil Altay Güvenir, Prof.</h4>
-              <span>Supervisor</span>
-              <div class="social">
-                <a href="https://www.linkedin.com/in/guvenir/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                <a href="http://www.cs.bilkent.edu.tr/~guvenir/" target="_blank"><i class="bi bi-globe"></i></a>
-              </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="custom-col col-md-6">
-        <div class="member" data-aos="fade-up" data-aos-delay="100">
-          <div class="pic"><img src="assets/img/team/bora.jpg" class="img-fluid" alt=""></div>
-            <div class="member-info">
-              <h4>Bora Güngören</h4>
-              <span>Innovation Expert</span>
-              <div class="social">
-                <a href="https://github.com/boragungoren-portakalteknoloji" target="_blank"><i class="bi bi-github"></i></a>
-                <a href="https://www.linkedin.com/in/boragungoren/" target="_blank"><i class="bi bi-linkedin"></i></a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
-        
-  </div>
-        
-  </div>
-
-  </div>
-    </section><!-- End Team Section -->
+      </section>
+      <!-- End Team Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact section-bg">
@@ -529,7 +408,7 @@
                     <span class="ms-2">CODED.</span>
                 </div>
                 <p class="custom-footer__description text-muted">
-                    Your virtual lab tutor.
+                    Renovating Learning with AI.
                 </p>
             </div>
             <div class="col-md-4">
