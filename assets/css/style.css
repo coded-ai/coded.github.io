@@ -983,9 +983,8 @@ section {
 /* Media query for mobile devices */
 @media (max-width: 768px) {
   #top-banner {
-    padding: 10px 15px;
-    font-size: 12px;
-    flex-direction: column;
+    padding: 8px 10px;
+    font-size: 8px;
   }
 
   .banner-logo {
@@ -993,15 +992,15 @@ section {
   }
 
   .banner-link {
-    padding: 8px 15px;
-    margin-left: 10px;
-    font-size: 12px;
-    border-radius: 8px;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 8px;
+    border-radius: 4px;
   }
 
   .banner-close {
-    top: 8px;
-    right: 10px;
-    font-size: 20px;
+    top: 4px;
+    right: 5px;
+    font-size: 8px;
   }
 }
