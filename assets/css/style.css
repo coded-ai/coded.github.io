@@ -860,9 +860,6 @@ section {
 }
 
 
-
-
-
 #footer .credits {
   padding-top: 10px;
   text-align: center;
@@ -903,6 +900,21 @@ section {
   text-decoration: underline;
 }
 
+.custom-footer__location {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.custom-footer__location-link {
+  color: #C307F9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.custom-footer__location-link:hover {
+  text-decoration: underline;
+}
+
 .custom-footer__tos {
   color: #777;
 }
@@ -924,7 +936,7 @@ section {
 /* Top Banner */
 #top-banner {
   background: linear-gradient(90deg, #C307F9 0%, #8A07F9 100%);
-  padding: 15px 20px;
+  padding: 10px 10px;
   text-align: center;
   font-weight: bold;
   position: fixed;
@@ -932,15 +944,31 @@ section {
   width: 100%;
   z-index: 1000;
   color: white;
-  font-family: 'Noto Sans', sans-serif;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-logo {
+  height: 30px;
+  margin-right: 10px;
 }
 
 .banner-link {
-  color: #FFD700;
-  text-decoration: underline;
+  display: inline-block;
+  padding: 5px 10px;
   margin-left: 10px;
+  background-color: #FFD700;
+  color: #000;
   font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.banner-link:hover {
+  background-color: #ffcc00;
 }
 
 .banner-close {
@@ -950,4 +978,30 @@ section {
   cursor: pointer;
   font-size: 24px;
   color: #FFD700;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  #top-banner {
+    padding: 10px 15px;
+    font-size: 12px;
+    flex-direction: column;
+  }
+
+  .banner-logo {
+    margin-bottom: 5px;
+  }
+
+  .banner-link {
+    padding: 8px 15px;
+    margin-left: 10px;
+    font-size: 12px;
+    border-radius: 8px;
+  }
+
+  .banner-close {
+    top: 8px;
+    right: 10px;
+    font-size: 20px;
+  }
 }
