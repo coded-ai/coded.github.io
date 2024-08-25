@@ -28,6 +28,17 @@
     }
   }
 
+
+  window.addEventListener('load', () => {
+    const currentYear = new Date().getFullYear();
+    const yearElement = document.getElementById('current-year');
+    if (yearElement) {
+      yearElement.textContent = currentYear;
+    }
+  });
+
+
+
   /**
    * Easy on scroll event listener 
    */
@@ -468,10 +479,6 @@
       window.attachEvent("onmessage", handleIFrameMessage);
     }
   });
-
-
-
-
   /**
    * Animation on scroll
    */

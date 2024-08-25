@@ -161,7 +161,6 @@ h1, h2, h3, h4, h5, h6 {
   justify-content: space-between;
   padding: 8px 16px;
   margin-left: 10px;
-  font-family: 'Noto Sans', sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #fff;
@@ -984,7 +983,7 @@ section {
 @media (max-width: 768px) {
   #top-banner {
     padding: 8px 10px;
-    font-size: 8px;
+    font-size: 12px;
   }
 
   .banner-logo {
@@ -992,15 +991,16 @@ section {
   }
 
   .banner-link {
-    padding: 5px 10px;
-    margin-left: 5px;
-    font-size: 8px;
+    padding: 2px 2px;
+    margin-left: 2px;
+    margin-right: 4px;
+    font-size: 12px;
     border-radius: 4px;
   }
 
   .banner-close {
     top: 4px;
     right: 5px;
-    font-size: 8px;
+    font-size: 12px;
   }
 }
