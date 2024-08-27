@@ -1004,3 +1004,62 @@ section {
     font-size: 12px;
   }
 }
+
+.request-access-container {
+  padding: 40px 0;
+}
+
+.section-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.section-heading .highlight {
+  background: linear-gradient(90deg, #C307F9 0%, #8A07F9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-description {
+  font-size: 1.2em;
+  color: #34495e;
+  margin-bottom: 30px;
+}
+
+.request-access-btn {
+  background-color: #C307F9;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  color: #fff;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+}
+
+.request-access-btn:hover {
+  background-color: #2c3e50;
+}
+
+
+@media (max-width: 768px) {
+  .section-heading {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 1em;
+  }
+
+  .request-access-btn {
+    padding: 8px 16px;
+    font-size: 0.9em;
+  }
+
+  .request-access-container {
+    padding: 20px 0;
+  }
+}
