@@ -994,14 +994,14 @@ section {
     padding: 2px 2px;
     margin-left: 2px;
     margin-right: 4px;
-    font-size: 12px;
+    font-size: 8px;
     border-radius: 4px;
   }
 
   .banner-close {
     top: 4px;
     right: 5px;
-    font-size: 12px;
+    font-size: 8px;
   }
 }
 
