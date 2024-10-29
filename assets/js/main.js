@@ -2,6 +2,30 @@
 (function() {
   "use strict";
 
+  const localization = {
+    en: {
+      availableIn: "Available in {days} days",
+      submittedOn: "Submitted on {date}",
+      presentedOn: "Presented on {date}"
+    },
+    tr: {
+      availableIn: "{days} gün içinde mevcut",
+      submittedOn: "Gönderildi: {date}",
+      presentedOn: "Sunuldu: {date}"
+    },
+    es: {
+      availableIn: "Disponible en {days} días",
+      submittedOn: "Enviado el {date}",
+      presentedOn: "Presentado el {date}"
+    },
+    de: {
+      availableIn: "Verfügbar in {days} Tagen",
+      submittedOn: "Eingereicht am {date}",
+      presentedOn: "Präsentiert am {date}"
+    }
+  };
+  let currentLanguage = 'en';
+
   /**
    * Easy selector helper function
    */
@@ -26,6 +50,21 @@
         selectEl.addEventListener(type, listener)
       }
     }
+  }
+
+  // Initialize translations immediately on page load
+  document.addEventListener("DOMContentLoaded", function() {
+    updateTranslations();
+    updateTimeLeft(currentLanguage);
+  });
+
+  function updateTranslations() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n');
+      if (localization[currentLanguage][key]) {
+        el.innerHTML = localization[currentLanguage][key];
+      }
+    });
   }
 
 
@@ -262,10 +301,8 @@
     });
   }
 
-  function updateTimeLeft() {
+  function updateTimeLeft(currentLanguage) {
     const now = new Date();
-
-    
     const specificationDate = new Date(2023, 10, 17, 10, 0);  // November 17 at 10:00 - Spec report deadline 
     const requirementsDate = new Date(2023, 11, 8, 10, 0); // December 8 at 10:00 - Req report deadline 
     const presentationDate = new Date(2023, 11, 20, 10, 0); // December 20 at 10:00 - Presentation deadline
@@ -296,46 +333,46 @@
     const springPresentationLink = document.getElementById("spring-presentation-link");
 
     if (specificationTimeLeft > 0) {
-      specificationNote.textContent = `Available in ${specificationTimeLeft} days`;
+      specificationNote.textContent = localization[currentLanguage].availableIn.replace('{days}', specificationTimeLeft);
     } else {
-      specificationNote.textContent = 'Submitted on 17/11/2023';
+      specificationNote.textContent = localization[currentLanguage].submittedOn.replace('{date}', "17/11/2023");
       specificationLink.style.display = 'block';
     }
 
     if (requirementsTimeLeft > 0) {
-      requirementsNote.textContent = `Available in ${requirementsTimeLeft} days`;
+      requirementsNote.textContent = localization[currentLanguage].availableIn.replace('{days}', requirementsTimeLeft);
     } else {
-      requirementsNote.textContent = 'Submitted on 08/12/2023';
+      requirementsNote.textContent = localization[currentLanguage].submittedOn.replace('{date}', "08/12/2023");
       requirementsLink.style.display = 'block';
     }
     if (presentationTimeLeft > 0) {
-      presentationNote.textContent = `Available in ${presentationTimeLeft} days`;
+      presentationNote.textContent = localization[currentLanguage].availableIn.replace('{days}', presentationTimeLeft);
     } else {
-      presentationNote.textContent = 'Presented on 05/12/2023';
+      presentationNote.textContent = localization[currentLanguage].presentedOn.replace('{date}', "05/12/2023");
       presentationLink.style.display = 'block';
     }
     if (detailedDesignDateLeft > 0) {
-      detailedDesignNote.textContent = `Available in ${detailedDesignDateLeft} days`;
+      detailedDesignNote.textContent = localization[currentLanguage].availableIn.replace('{days}', detailedDesignDateLeft);
     } else {
-      detailedDesignNote.textContent = 'Submitted on 15/03/2024';
+      detailedDesignNote.textContent = localization[currentLanguage].submittedOn.replace('{date}', "15/03/2024");
       detailedDesignLink.style.display = 'block';
     }
     if (finalReportDateLeft > 0) {
-      finalReportNote.textContent = `Available in ${finalReportDateLeft} days`;
+      finalReportNote.textContent = localization[currentLanguage].availableIn.replace('{days}', finalReportDateLeft);
     } else {
-      finalReportNote.textContent = 'Submitted on 13/05/2024';
+      finalReportNote.textContent = localization[currentLanguage].submittedOn.replace('{date}', "13/05/2024");
       finalReportLink.style.display = 'block';
     }
     if (springPresentationDateLeft > 0) {
-      springPresentationNote.textContent = `Available in May 2024`;
+      springPresentationNote.textContent = localization[currentLanguage].availableIn.replace('{days}', springPresentationDateLeft);
     } else {
-      springPresentationNote.textContent = 'Presented on 10/05/2024';
+      springPresentationNote.textContent = localization[currentLanguage].presentedOn.replace('{date}', "10/05/2024");
       springPresentationLink.style.display = 'block';
     }
   }
 
   // Update time left immediately and then every day
-  updateTimeLeft();
+  updateTimeLeft(currentLanguage);
   setInterval(updateTimeLeft, 24 * 60 * 60 * 1000);
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -364,6 +401,14 @@
         }
     });
 });
+
+  // Language selector
+  document.getElementById('language-select').addEventListener('change', function() {
+    currentLanguage = this.value;
+    updateTranslations(currentLanguage);
+    updateTimeLeft(currentLanguage);
+  });
+
 
   var jotformScript = document.createElement('script');
   jotformScript.src = "https://form.jotform.com/static/feedback2.js";

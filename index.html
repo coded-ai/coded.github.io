@@ -21,6 +21,7 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" href="assets/img/colorful_logo.png" type="image/x-icon">
+    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
 
 </head>
 <!-- Google tag (gtag.js) -->
@@ -33,11 +34,14 @@
     gtag('config', 'G-993N4R46PW');
 </script>
 <body>
+<script src="assets/js/localization.js"></script> <!-- Localization Script -->
     <!-- Top Banner -->
     <div id="top-banner">
         <img src="assets/img/bilkent-logo.png" alt="Bilkent Logo" class="banner-logo">
-        CODED has won the Innovation Award at Bilkent University CS Fair 2024!
-        <a href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" class="banner-link">Learn more</a>
+        <div data-i18n="bannerText">
+            CODED has won the Innovation Award at Bilkent University CS Fair 2024!
+        </div>
+        <a href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" class="banner-link" data-i18n="learnMore" >Learn more</a>
         <span id="banner-close" class="banner-close">&times;</span>
     </div>
     <!-- end of Top Banner -->
@@ -55,12 +59,21 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="#about">About</a></li>
-                    <li><a class="nav-link scrollto" href="#reports">Academic Reports</a></li>
-                    <li><a class="nav-link scrollto" href="#team">Team</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <li><a class="nav-link scrollto active" href="#hero" data-i18n="home">Home</a></li>
+                    <li><a class="nav-link scrollto" href="#about" data-i18n="about">About</a></li>
+                    <li><a class="nav-link scrollto" href="#reports" data-i18n="academicReports">Academic Reports</a></li>
+                    <li><a class="nav-link scrollto" href="#team" data-i18n="team">Team</a></li>
+                    <li><a class="nav-link scrollto" href="#contact" data-i18n="contact">Contact</a></li>
                 </ul>
+                <div>
+                    <label for="language-select" class="visually-hidden">Select Language</label>
+                    <select id="language-select" class="form-select w-auto" aria-label="Select Language">
+                        <option value="en">English</option>
+                        <option value="tr">Türkçe</option>
+                        <option value="es">Español</option>
+                        <option value="de">Deutsch</option>
+                    </select>
+                </div>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
         </div>
@@ -68,8 +81,8 @@
     <!-- ======= Hero Section ======= -->
   <section id="hero">
     <div class="hero-container">
-      <h1>Welcome to <span>CODED.</span></h1>
-      <h2>Renovating Learning with AI.</h2>
+      <h1 data-i18n="heroWelcomeText">Welcome to <span>CODED.</span></h1>
+      <h2 data-i18n="heroWelcomeSubText">Renovating Learning with AI.</h2>
       <a href="#about" class="btn-get-started scrollto"><i class="bx bx-chevrons-down"></i></a>
     </div>
   </section><!-- End Hero -->
@@ -81,15 +94,15 @@
                   <!-- Introduction Content -->
                   <div class="col-lg-6 d-flex align-items-center">
                       <div class="content p-4">
-                          <h3 class="section-heading">Empowering Students with <span class="highlight">Smart Coding Solutions</span></h3>
-                          <p class="highlight-text">
+                          <h3 class="section-heading" data-i18n="introductionSectionHeading">Empowering Students with <span class="highlight">Smart Coding Solutions</span></h3>
+                          <p class="highlight-text" data-i18n="introductionSectionHighlightedText">
                               Welcome to <strong>CODED</strong>, your ultimate virtual lab tutor designed exclusively for Computer Science and CTIS students at Bilkent University. We harness the power of AI to transform your learning experience, making coding more intuitive, efficient, and enjoyable.
                           </p>
                           <div class="mt-4 d-flex flex-column flex-sm-row">
-                              <a href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" class="btn btn-primary mb-2 mb-sm-0 me-sm-2 btn-cta w-100 w-sm-auto">
+                              <a href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" class="btn btn-primary mb-2 mb-sm-0 me-sm-2 btn-cta w-100 w-sm-auto" data-i18n="tryOnChatGPT">
                                   Try CODED AI on ChatGPT <i class="bx bx-chevron-right"></i>
                               </a>
-                              <a href="https://github.com/coded-ai" target="_blank" class="btn btn-outline-secondary w-100 w-sm-auto">
+                              <a href="https://github.com/coded-ai" target="_blank" class="btn btn-outline-secondary w-100 w-sm-auto" data-i18n="followOnGithub">
                                   Follow us on GitHub <i class="bi bi-github"></i>
                               </a>
                           </div>
@@ -102,29 +115,29 @@
                           <div class="col-md-6 mb-4">
                               <div class="icon-box text-center" data-aos="fade-up" data-aos-delay="100">
                                   <i class="bx bx-chat fs-1" style="color: #ff689b;"></i>
-                                  <h5 class="mt-3" style="color: #C307F9;">AI-Powered Chatbot</h5>
-                                  <p>Instantly resolve your lab queries with our smart chatbot, providing guidance without giving away direct answers.</p>
+                                  <h5 class="mt-3" style="color: #C307F9;" data-i18n="chatbotSectionTitle">AI-Powered Chatbot</h5>
+                                  <p data-i18n="chatbotSectionDesc">Instantly resolve your lab queries with our smart chatbot, providing guidance without giving away direct answers.</p>
                               </div>
                           </div>
                           <div class="col-md-6 mb-4">
                               <div class="icon-box text-center" data-aos="fade-up" data-aos-delay="200">
                                   <i class="bx bx-search-alt fs-1" style="color: #e9bf06;"></i>
-                                  <h5 class="mt-3" style="color: #C307F9;">Advanced Similarity Check</h5>
-                                  <p>Ensure academic integrity by comparing your code with previous submissions and repositories.</p>
+                                  <h5 class="mt-3" style="color: #C307F9;" data-i18n="similaritySectionTitle">Advanced Similarity Check</h5>
+                                  <p data-i18n="similaritySectionDesc">Ensure academic integrity by comparing your code with previous submissions and repositories.</p>
                               </div>
                           </div>
                           <div class="col-md-6 mb-4">
                               <div class="icon-box text-center" data-aos="fade-up" data-aos-delay="300">
                                   <i class="bx bx-code-block fs-1" style="color: #3fcdc7;"></i>
-                                  <h5 class="mt-3" style="color: #C307F9;">Clean Code Evaluator</h5>
-                                  <p>Receive comprehensive feedback on your code quality, including readability, efficiency, and security.</p>
+                                  <h5 class="mt-3" style="color: #C307F9;" data-i18n="cleanCodeSectionTitle">Clean Code Evaluator</h5>
+                                  <p data-i18n="cleanCodeSectionDesc">Receive comprehensive feedback on your code quality, including readability, efficiency, and security.</p>
                               </div>
                           </div>
                           <div class="col-md-6 mb-4">
                               <div class="icon-box text-center" data-aos="fade-up" data-aos-delay="400">
                                   <i class="bx bx-test-tube fs-1" style="color: #a23bf2;"></i>
-                                  <h5 class="mt-3" style="color: #C307F9;">Automated Test Case Runner</h5>
-                                  <p>Run your code against multiple test cases effortlessly to ensure it meets all requirements.</p>
+                                  <h5 class="mt-3" style="color: #C307F9;" data-i18n="testCaseRunnerSectionTitle">Automated Test Case Runner</h5>
+                                  <p data-i18n="testCaseRunnerSectionDesc">Run your code against multiple test cases effortlessly to ensure it meets all requirements.</p>
                               </div>
                           </div>
                       </div>
@@ -137,15 +150,15 @@
     <section id="reports" class="reports">
       <div class="container">
           <div class="section-title" >
-              <h2>Academic Reports</h2>
+              <h2 data-i18n="academicReports">Academic Reports</h2>
           </div>
           <div class="request-access-container">
               <div class="row justify-content-center text-center">
                   <div class="col-md-12">
-                      <h3 class="section-heading">
+                      <h3 class="section-heading" data-i18n="academicReportsSectionTitle">
                           Academic reports are <span class="highlight">password protected</span>
                       </h3>
-                      <p class="section-description">
+                      <p class="section-description" data-i18n="academicReportsSectionDesc">
                           All academic reports are password protected. To request access, please click the button below and fill out the form. You will receive the necessary credentials via email.
                       </p>
                       <button class="btn btn-primary request-access-btn" onclick="function openRequestForm() {
@@ -155,7 +168,7 @@
                             'scrollbars=yes,toolbar=no,width=900,height=700'
                         );
                       }
-                      openRequestForm()">
+                      openRequestForm()" data-i18n="requestAccess">
                           Request Access
                       </button>
                   </div>
@@ -167,7 +180,7 @@
               <div class="col-md-4">
                   <div class="icon-box" data-aos="zoom-in-left">
                       <div class="icon"><i class="bi bi-card-checklist" style="color: #ff689b;"></i></div>
-                      <h4 class="title">
+                      <h4 class="title" data-i18n="projectSpecificationReport">
                           <a href="assets/reports/T2322_Project_Specification_Document_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
@@ -176,8 +189,8 @@
                       </h4>
                       <p class="availability-note" id="specification-note"></p>
                       <div class="view-and-label">
-                        <a class="description" id="specification-link" href="assets/reports/T2322_Project_Specification_Document_encrypted.pdf"  target="_blank" style="display:none;">View</a>
-                        <div class="new-label new-label-specification" style="display:none;">NEW</div>
+                        <a class="description" id="specification-link" href="assets/reports/T2322_Project_Specification_Document_encrypted.pdf"  target="_blank" style="display:none;" data-i18n="view">View</a>
+                        <div class="new-label new-label-specification" style="display:none;" data-i18n="new">NEW</div>
                       </div>
                   </div>
               </div>
@@ -185,7 +198,7 @@
               <div class="col-md-4">
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="100">
                       <div class="icon"><i class="bi bi-clipboard-data" style="color: #e9bf06;"></i></div>
-                      <h4 class="title">
+                      <h4 class="title" data-i18n="analysisAndRequirementsReport">
                           <a href="assets/reports/T2322_Analysis_and_Requirements_Report_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
@@ -194,8 +207,8 @@
                       </h4>
                       <p class="availability-note" id="requirements-note"></p>
                       <div class="view-and-label">
-                        <a class="description" id="requirements-link" href="assets/reports/T2322_Analysis_and_Requirements_Report_encrypted.pdf" target="_blank" style="display:none;">View</a>
-                        <div class="new-label new-label-requirements" style="display:none;">NEW</div>
+                        <a class="description" id="requirements-link" href="assets/reports/T2322_Analysis_and_Requirements_Report_encrypted.pdf" target="_blank" style="display:none;" data-i18n="view">View</a>
+                        <div class="new-label new-label-requirements" style="display:none;"  data-i18n="new">NEW</div>
                       </div>
                   </div>
               </div>
@@ -203,7 +216,7 @@
               <div class="col-md-4">
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                       <div class="icon"><i class="bi bi-file-slides" style="color: #3fcdc7;"></i></div>
-                      <h4 class="title">
+                      <h4 class="title" data-i18n="fallSemesterPresentationDemo">
                           <a href="assets/reports/T2322_Fall_Semester_Demo_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-ppt-fill" style="color: orange;"></i>
@@ -212,8 +225,8 @@
                       </h4>
                       <p class="availability-note" id="presentation-note"></p>
                       <div class="view-and-label">
-                        <a class="description" id="presentation-link" href="assets/reports/T2322_Fall_Semester_Demo_encrypted.pdf" target="_blank" style="display:none;">View</a>
-                        <div class="new-label new-label-presentation" style="display:none;">NEW</div>
+                        <a class="description" id="presentation-link" href="assets/reports/T2322_Fall_Semester_Demo_encrypted.pdf" target="_blank" style="display:none;" data-i18n="view">View</a>
+                        <div class="new-label new-label-presentation" style="display:none;"  data-i18n="new">NEW</div>
                       </div>
                   </div>
               </div>
@@ -222,7 +235,7 @@
               <div class="col-md-4">
                   <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                       <div class="icon"><i class="bi bi-pencil-square" style="color: #4e91fc;"></i></div>
-                      <h4 class="title">
+                      <h4 class="title" data-i18n="detailedDesignReport">
                           <a href="assets/reports/T2322_Detailed_Design_Report_encrypted.pdf" target="_blank">
                               <!-- PDF Icon -->
                               <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
@@ -231,15 +244,15 @@
                       </h4>
                       <p class="availability-note" id="detailed-design-note"></p>
                       <div class="view-and-label">
-                        <a class="description" id="detailed-design-report-link" href="assets/reports/T2322_Detailed_Design_Report_encrypted.pdf" target="_blank" style="display:none;">View</a>
-                        <div class="new-label new-label-detailedDesign" style="display:none;">NEW</div>
+                        <a class="description" id="detailed-design-report-link" href="assets/reports/T2322_Detailed_Design_Report_encrypted.pdf" target="_blank" style="display:none;" data-i18n="view">View</a>
+                        <div class="new-label new-label-detailedDesign" style="display:none;"  data-i18n="new">NEW</div>
                       </div>
                   </div>
               </div>
               <div class="col-md-4">
               <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                   <div class="icon"><i class="bi bi-easel" style="color: #a23bf2;"></i></div>
-                  <h4 class="title">
+                  <h4 class="title" data-i18n="finalPresentationDemo">
                     <a href="assets/reports/T2322-Spring-Semester-Demo_encrypted.pdf" target="_blank">
                       <!-- PDF Icon -->
                       <i class="bi bi-file-earmark-ppt-fill" style="color: orange;"></i>
@@ -248,15 +261,15 @@
                   </h4>
                   <p class="availability-note" id="spring-presentation-note"></p>
                   <div class="view-and-label">
-                    <a class="description" id="spring-presentation-link" href="assets/reports/T2322-Spring-Semester-Demo_encrypted.pdf"  target="_blank" style="display:none;">View</a>
-                    <div class="new-label new-label-springPresentation" style="display:none;">NEW</div>
+                    <a class="description" id="spring-presentation-link" href="assets/reports/T2322-Spring-Semester-Demo_encrypted.pdf"  target="_blank" style="display:none;" data-i18n="view">View</a>
+                    <div class="new-label new-label-springPresentation" style="display:none;"  data-i18n="new">NEW</div>
                   </div>
               </div>
             </div>
               <div class="col-md-4">
                 <div class="icon-box" data-aos="zoom-in-left" data-aos-delay="200">
                     <div class="icon"><i class="bi bi-journal-check" style="color: #fca03b;"></i></div>
-                    <h4 class="title">
+                    <h4 class="title" data-i18n="finalReport">
                         <a href="assets/reports/T2322_Final_Report_encrypted.pdf" target="_blank">
                             <!-- PDF Icon -->
                             <i class="bi bi-file-earmark-pdf" style="color: #ff0000;"></i>
@@ -265,8 +278,8 @@
                     </h4>
                     <p class="availability-note" id="final-report-note"></p>
                     <div class="view-and-label">
-                      <a class="description" id="final-report-link" href="assets/reports/T2322_Final_Report_encrypted.pdf" target="_blank" style="display:none;">View</a>
-                      <div class="new-label new-label-finalReport" style="display:none;">NEW</div>
+                      <a class="description" id="final-report-link" href="assets/reports/T2322_Final_Report_encrypted.pdf" target="_blank" style="display:none;" data-i18n="view">View</a>
+                      <div class="new-label new-label-finalReport" style="display:none;"  data-i18n="new">NEW</div>
                     </div>
                 </div>
             </div>
@@ -278,7 +291,7 @@
       <section id="team" class="team">
           <div class="container">
               <div class="section-title" >
-                  <h2>Team</h2>
+                  <h2 data-i18n="team">Team</h2>
               </div>
               <div class="row">
                   <div class="col-lg-4 col-md-6">
@@ -288,7 +301,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Emre Karataş</h4>
-                              <span>Senior Student at Bilkent University</span>
+                              <span data-i18n="teamStudentTitle">Senior Student at Bilkent University</span>
                               <div class="social">
                                   <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1MxS2NhaodAt2LuBUwPReZOBAxqjBngB8kAVXFcUU87A/edit?usp=sharing" target="_blank" aria-label="Emre Karatas' Document">LB</a>
                                   <a href="https://github.com/emre-karatas" target="_blank"><i class="bi bi-github"></i></a>
@@ -304,7 +317,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Beyza Çağlar</h4>
-                              <span>Senior Student at Bilkent University</span>
+                              <span data-i18n="teamStudentTitle">Senior Student at Bilkent University</span>
                               <div class="social">
                                   <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1TyhXPujxnOhMgnQ9U40h1nj0d6e1HHgACXeUuCLVQLw/edit?usp=sharing" target="_blank" aria-label="Beyza Caglar's Document">LB</a>
                                   <a href="https://github.com/beyzacaglar" target="_blank"><i class="bi bi-github"></i></a>
@@ -320,7 +333,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Selin Bahar Gündoğar</h4>
-                              <span>Senior Student at Bilkent University</span>
+                              <span data-i18n="teamStudentTitle">Senior Student at Bilkent University</span>
                               <div class="social">
                                   <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1rPeWysRyB1lMOCQRhYD33eqgVrmU0l1_5sIsxi8wrf4/edit?usp=sharing" target="_blank" aria-label="Selin Bahar Gundogar's Document">LB</a>
                                   <a href="https://github.com/SelinBaharGundogar" target="_blank"><i class="bi bi-github"></i></a>
@@ -336,7 +349,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Zeynep Hanife Akgül</h4>
-                              <span>Senior Student at Bilkent University</span>
+                              <span data-i18n="teamStudentTitle">Senior Student at Bilkent University</span>
                               <div class="social">
                                   <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1o0-W7-ThsX_pyBFF4Nv7qce1G83-SxgAi5nwoVxTSaI/edit?usp=sharing" target="_blank" aria-label="Zeynep Hanife Akgul's Document">LB</a>
                                   <a href="https://github.com/zeynephakgul" target="_blank"><i class="bi bi-github"></i></a>
@@ -352,7 +365,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Zeynep Selcen Öztunç</h4>
-                              <span>Senior Student at Bilkent University</span>
+                              <span data-i18n="teamStudentTitle">Senior Student at Bilkent University</span>
                               <div class="social">
                                   <a class="btn btn-dark btn-social mx-2" href="https://docs.google.com/document/d/1XGwikDTDHycC_pSGIrCbQK_SjXvv7gdW7tkd7Ri3Vp4/edit?usp=sharing" target="_blank" aria-label="Zeynep Selcen Oztunc's Document">LB</a>
                                   <a href="https://github.com/zeynepoztunc" target="_blank"><i class="bi bi-github"></i></a>
@@ -368,7 +381,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Halil Altay Güvenir, Prof.</h4>
-                              <span>Supervisor</span>
+                              <span data-i18n="teamSupervisorTitle">Supervisor</span>
                               <div class="social">
                                   <a href="https://www.linkedin.com/in/guvenir/" target="_blank"><i class="bi bi-linkedin"></i></a>
                                   <a href="http://www.cs.bilkent.edu.tr/~guvenir/" target="_blank"><i class="bi bi-globe"></i></a>
@@ -383,7 +396,7 @@
                           </div>
                           <div class="member-info">
                               <h4>Bora Güngören</h4>
-                              <span>Innovation Expert</span>
+                              <span data-i18n="teamInnovationExpertTitle">Innovation Expert</span>
                               <div class="social">
                                   <a href="https://github.com/boragungoren-portakalteknoloji" target="_blank"><i class="bi bi-github"></i></a>
                                   <a href="https://www.linkedin.com/in/boragungoren/" target="_blank"><i class="bi bi-linkedin"></i></a>
@@ -399,7 +412,7 @@
     <section id="contact" class="contact section-bg">
       <div class="container" >
         <div class="section-title">
-          <h2>Contact Us</h2>
+          <h2 data-i18n="contact">Contact Us</h2>
         </div>
         <div class="jotform-container">
           <script type="text/javascript" src="https://form.jotform.com/jsform/240232951883963"></script>
@@ -418,33 +431,33 @@
                         <img src="assets/img/colorful_logo.png" alt="CODED Logo" class="custom-footer__logo-image"/>
                         <span class="ms-2">CODED.</span>
                     </div>
-                    <p class="custom-footer__description text-muted">
+                    <p class="custom-footer__description text-muted" data-i18n="heroWelcomeSubText">
                         Renovating Learning with AI.
                     </p>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="col-md-4">
-                    <h5 class="custom-footer__heading">Quick Links</h5>
+                    <h5 class="custom-footer__heading" data-i18n="quickLinks">Quick Links</h5>
                     <ul class="custom-footer__links list-unstyled">
-                        <li><a href="https://coded-inc.gitbook.io/documentation-students" target="_blank" rel="noopener noreferrer">Documentation</a></li>
+                        <li><a href="https://coded-inc.gitbook.io/documentation-students" target="_blank" rel="noopener noreferrer" data-i18n="documentation">Documentation</a></li>
                     </ul>
                 </div>
 
                 <!-- Location Info -->
                 <div class="col-md-4">
                     <h5 class="custom-footer__heading">Location</h5>
-                    <p class="custom-footer__location">
+                    <p class="custom-footer__location" data-i18n="address">
                         Bilkent University<br>
                         Department of Computer Science
                     </p>
-                    <a href="https://maps.app.goo.gl/XCe4TWQHVofDgkWZA" target="_blank" class="custom-footer__location-link">View on Google Maps</a>
+                    <a href="https://maps.app.goo.gl/XCe4TWQHVofDgkWZA" target="_blank" class="custom-footer__location-link" data-i18n="viewOnGoogleMaps">View on Google Maps</a>
                 </div>
             </div>
             <hr class="mt-4"/>
             <div class="text-muted d-flex justify-content-between align-items-center pt-2">
-                <p class="mb-0">Copyright © <span id="current-year"></span> CODED.</p>
-                <a href="cookie-policy.html" target="_blank" class="custom-footer__tos">Terms of Service</a>
+                <p data-i18n="footerText">&copy; <span id="current-year"></span> CODED | All Rights Reserved</p>
+                <a href="cookie-policy.html" target="_blank" class="custom-footer__tos" data-i18n="termsOfService">Terms of Service</a>
             </div>
         </div>
     </footer>
