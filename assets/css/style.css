@@ -1062,4 +1062,33 @@ section {
   .request-access-container {
     padding: 20px 0;
   }
+  @media (max-width: 576px) {
+    .btn-cta {
+      font-size: 1rem;
+      padding: 0.75rem 1rem;
+    }
+  }
+
+  @media (min-width: 577px) {
+    .btn-cta {
+      font-size: 1.1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+  .btn-cta:hover {
+    background-color: #C307F9;
+    color: #fff;
+    text-decoration: none;
+  }
+  .btn-outline-secondary {
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+  }
+  @media (min-width: 577px) {
+    .btn-outline-secondary {
+      font-size: 1.1rem;
+      padding: 0.75rem 1.5rem;
+    }
+  }
+
 }
