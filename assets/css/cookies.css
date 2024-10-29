@@ -104,15 +104,6 @@ a:hover {
     margin-right: 15px;
     width: auto;
 }
-
-#language-select {
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 5px;
-    border: none;
-    background-color: #fff;
-}
-
 .footer {
     color: #fff;
     text-align: center;
@@ -139,11 +130,6 @@ a:hover {
     p, li {
         font-size: 14px;
     }
-
-    #language-select {
-        font-size: 14px;
-    }
-
     .back-button {
         padding: 8px 15px;
         font-size: 14px;
@@ -174,4 +160,35 @@ a:hover {
         font-size: 14px;
         padding: 10px;
     }
+    /* Language Selector Styles */
+    #language-select {
+        width: 120px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+    @media (max-width: 576px) {
+        #language-select {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+
+    /* Visually Hidden Label for Accessibility */
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap; /* added line */
+        border: 0;
+    }
+
+
 }
