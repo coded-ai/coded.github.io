@@ -1,4 +1,5 @@
 {
+  "keywords": "CODED, virtueller Labortutor, Informatik-Labors, CTIS-Labors, Bilkent-Universität, KI-Chatbot, Code-Ähnlichkeitsprüfung, sauberer Code-Bewerter, Testfall-Automatisierung, Studenten-Codierungstools, intelligente Codierungslösungen, Bildungstechnologie, Programmierhilfe, Code-Effizienz",
   "title": "CODED | Cookie-Richtlinie",
   "lastUpdated": "Zuletzt aktualisiert: 4. September 2024",
   "interpretationDefinitions": "Interpretation und Definitionen",
@@ -31,6 +32,7 @@
   "yourChoicesText2": "Wenn Sie unsere Cookies nicht akzeptieren, können Sie einige Unannehmlichkeiten bei der Nutzung der Website erfahren und einige Funktionen funktionieren möglicherweise nicht richtig.",
   "goBack": "Zurück",
   "footerText": "© <span id=\"current-year\"></span> CODED | Alle Rechte vorbehalten",
+  "descriptionText": "CODED ist der ultimative virtuelle Labortutor, der für Informatik- und CTIS-Studierende der Bilkent-Universität entwickelt wurde. Mit einer Reihe intelligenter Werkzeuge wie einem KI-gesteuerten Chatbot, fortschrittlicher Ähnlichkeitsprüfung, sauberem Code-Bewerter und automatisiertem Testfall-Runner hilft CODED Ihnen, saubereren und effizienteren Code zu schreiben.",
   "bannerText": "CODED hat den Innovationspreis auf der Bilkent University CS Fair 2024 gewonnen!",
   "learnMore": "Erfahren Sie mehr",
   "home": "Startseite",
@@ -39,7 +41,7 @@
   "team": "Team",
   "contact": "Kontakt",
   "heroWelcomeText": "Willkommen bei <span>CODED.</span>",
-  "heroWelcomeSubText": "Das Lernen mit KI neu gestalten",
+  "heroWelcomeSubText": "Das Lernen mit KI neu gestalten.",
   "introductionSectionHeading": "Studierende mit <span class=\"highlight\">intelligenten Codierungs-Lösungen</span> stärken",
   "introductionSectionHighlightedText": "Willkommen bei <strong>CODED</strong>, Ihrem ultimativen virtuellen Labortutor, der exklusiv für Studierende der Informatik und CTIS an der Bilkent-Universität konzipiert wurde. Wir nutzen die Kraft der KI, um Ihre Lernerfahrung zu transformieren und das Codieren intuitiver, effizienter und angenehmer zu gestalten.",
   "tryOnChatGPT": "Versuchen Sie CODED AI auf ChatGPT <i class=\"bx bx-chevron-right\"></i>",

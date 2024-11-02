@@ -1,4 +1,5 @@
 {
+  "keywords": "CODED, sanal laboratuvar rehberi, Bilgisayar Bilimleri laboratuvarları, CTIS laboratuvarları, Bilkent Üniversitesi, yapay zeka sohbet botu, kod benzerlik kontrolü, temiz kod değerlendirme, test otomasyonu, öğrenci kodlama araçları, akıllı kodlama çözümleri, eğitim teknolojisi, programlama yardımı, kod verimliliği",
   "title": "CODED | Çerez Politikası",
   "lastUpdated": "Son güncelleme: 4 Eylül 2024",
   "interpretationDefinitions": "Yorumlama ve Tanımlar",
@@ -31,6 +32,7 @@
   "yourChoicesText2": "Çerezlerimizi kabul etmezseniz, Web Sitesini kullanırken bazı rahatsızlıklar yaşayabilir ve bazı özellikler düzgün çalışmayabilir.",
   "goBack": "Geri Dön",
   "footerText": "© <span id=\"current-year\"></span> CODED | Tüm Hakları Saklıdır",
+  "descriptionText": "CODED, Bilkent Üniversitesi Bilgisayar Bilimleri ve CTIS öğrencileri için tasarlanmış en gelişmiş sanal laboratuvar rehberidir. Yapay zeka destekli sohbet botu, gelişmiş benzerlik kontrolü, temiz kod değerlendirme ve otomatik test çalıştırıcı gibi akıllı araçlarıyla CODED, daha temiz ve verimli kod yazmanıza yardımcı olur.",
   "bannerText": "CODED, Bilkent Üniversitesi CS Fuarı 2024'te Yenilikçilik Ödülünü kazandı!",
   "learnMore": "Daha Fazla Bilgi Alın",
   "home": "Ana Sayfa",
@@ -39,7 +41,7 @@
   "team": "Ekip",
   "contact": "İletişim",
   "heroWelcomeText": "<span>CODED.</span>'e Hoş Geldiniz",
-  "heroWelcomeSubText": "Yapay Zeka ile Öğrenmeyi Yeniden Şekillendiriyoruz",
+  "heroWelcomeSubText": "Yapay Zeka ile Öğrenmeyi Yeniden Şekillendiriyoruz.",
   "introductionSectionHeading": "<span class=\"highlight\">Akıllı Kodlama Çözümleri</span> ile Öğrencileri Güçlendiriyoruz",
   "introductionSectionHighlightedText": "<strong>CODED</strong>'e hoş geldiniz; Bilkent Üniversitesi Bilgisayar Bilimleri ve CTIS öğrencileri için özel olarak tasarlanmış nihai sanal laboratuvar öğretmeniniz. Öğrenim deneyiminizi dönüştürmek için Yapay Zekanın gücünü kullanıyoruz; kodlamayı daha sezgisel, verimli ve keyifli hale getiriyoruz.",
   "tryOnChatGPT": "ChatGPT'de CODED AI'yi Deneyin <i class=\"bx bx-chevron-right\"></i>",

@@ -1,4 +1,5 @@
 {
+  "keywords": "CODED, tutor virtual de laboratorio, laboratorios de CS, laboratorios de CTIS, Universidad de Bilkent, chatbot de IA, verificación de similitud de código, evaluador de código limpio, automatización de casos de prueba, herramientas de codificación para estudiantes, soluciones inteligentes de codificación, tecnología educativa, asistencia en programación, eficiencia de codificación",
   "title": "CODED | Política de Cookies",
   "lastUpdated": "Última actualización: 4 de Septiembre de 2024",
   "interpretationDefinitions": "Interpretación y Definiciones",
@@ -31,6 +32,7 @@
   "yourChoicesText2": "Si no acepta nuestras Cookies, puede experimentar algunas molestias en su uso del Sitio Web y algunas funciones pueden no funcionar correctamente.",
   "goBack": "Volver",
   "footerText": "© <span id=\"current-year\"></span> CODED | Todos los Derechos Reservados",
+  "descriptionText": "CODED es el tutor virtual definitivo diseñado para estudiantes de Ciencias de la Computación y CTIS de la Universidad de Bilkent. Con una suite de herramientas inteligentes, incluyendo un chatbot impulsado por IA, verificación avanzada de similitud, evaluador de código limpio y ejecutor automático de casos de prueba, CODED le ayuda a escribir código más limpio y eficiente con facilidad.",
   "bannerText": "¡CODED ha ganado el Premio a la Innovación en la Feria CS de la Universidad Bilkent 2024!",
   "learnMore": "Aprender Más",
   "home": "Inicio",
@@ -39,7 +41,7 @@
   "team": "Equipo",
   "contact": "Contacto",
   "heroWelcomeText": "Bienvenido a <span>CODED.</span>",
-  "heroWelcomeSubText": "Renovando el Aprendizaje con IA",
+  "heroWelcomeSubText": "Renovando el Aprendizaje con IA.",
   "introductionSectionHeading": "Empoderando a los Estudiantes con <span class=\"highlight\">Soluciones de Codificación Inteligente</span>",
   "introductionSectionHighlightedText": "Bienvenido a <strong>CODED</strong>, su tutor virtual de laboratorio definitivo diseñado exclusivamente para estudiantes de Ciencias de la Computación y CTIS en la Universidad Bilkent. Aprovechamos el poder de la IA para transformar su experiencia de aprendizaje, haciendo que la codificación sea más intuitiva, eficiente y placentera.",
   "tryOnChatGPT": "Prueba CODED AI en ChatGPT <i class=\"bx bx-chevron-right\"></i>",

@@ -1,4 +1,5 @@
 {
+  "keywords": "CODED, virtual lab tutor, CS labs, CTIS labs, Bilkent University, AI chatbot, code similarity check, clean code evaluator, test case automation, student coding tools, smart coding solutions, educational technology, programming assistance, coding efficiency",
   "title": "CODED | Cookies Policy",
   "lastUpdated": "Last updated: September 4, 2024",
   "interpretationDefinitions": "Interpretation and Definitions",
@@ -31,6 +32,7 @@
   "yourChoicesText2": "If You do not accept Our Cookies, You may experience some inconvenience in your use of the Website and some features may not function properly.",
   "goBack": "Go Back",
   "footerText": "© <span id=\"current-year\"></span> CODED | All Rights Reserved",
+  "descriptionText": "CODED is the ultimate virtual lab tutor designed for Computer Science and CTIS students at Bilkent University. Offering a suite of smart tools including an AI-powered chatbot, advanced similarity check, clean code evaluator, and automated test case runner, CODED helps you write cleaner, more efficient code with ease.",
   "bannerText": "CODED has won the Innovation Award at Bilkent University CS Fair 2024!",
   "learnMore": "Learn More",
   "home": "Home",
@@ -39,7 +41,7 @@
   "team": "Team",
   "contact": "Contact",
   "heroWelcomeText": "Welcome to <span>CODED.</span>",
-  "heroWelcomeSubText": "Renovating Learning with AI",
+  "heroWelcomeSubText": "Renovating Learning with AI.",
   "introductionSectionHeading": "Empowering Students with <span class=\"highlight\">Smart Coding Solutions</span>",
   "introductionSectionHighlightedText": "Welcome to <strong>CODED</strong>, your ultimate virtual lab tutor designed exclusively for Computer Science and CTIS students at Bilkent University. We harness the power of AI to transform your learning experience, making coding more intuitive, efficient, and enjoyable.",
   "tryOnChatGPT": "Try CODED AI on ChatGPT <i class=\"bx bx-chevron-right\"></i>",
