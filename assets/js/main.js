@@ -22,6 +22,11 @@
       availableIn: "Verfügbar in {days} Tagen",
       submittedOn: "Eingereicht am {date}",
       presentedOn: "Präsentiert am {date}"
+    },
+    it: {
+      "availableIn": "Disponibile in {days} giorni",
+      "submittedOn": "Inviato il {date}",
+      "presentedOn": "Presentato il {date}"
     }
   };
   let currentLanguage = 'en';
