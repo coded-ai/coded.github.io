@@ -8,25 +8,80 @@
       submittedOn: "Submitted on {date}",
       presentedOn: "Presented on {date}"
     },
-    tr: {
-      availableIn: "{days} gün içinde mevcut",
-      submittedOn: "Gönderildi: {date}",
-      presentedOn: "Sunuldu: {date}"
-    },
     es: {
       availableIn: "Disponible en {days} días",
       submittedOn: "Enviado el {date}",
       presentedOn: "Presentado el {date}"
+    },
+    pt: {
+      availableIn: "Disponível em {days} dias",
+      submittedOn: "Enviado em {date}",
+      presentedOn: "Apresentado em {date}"
     },
     de: {
       availableIn: "Verfügbar in {days} Tagen",
       submittedOn: "Eingereicht am {date}",
       presentedOn: "Präsentiert am {date}"
     },
+    tr: {
+      availableIn: "{days} gün içinde mevcut",
+      submittedOn: "Gönderildi: {date}",
+      presentedOn: "Sunuldu: {date}"
+    },
     it: {
-      "availableIn": "Disponibile in {days} giorni",
-      "submittedOn": "Inviato il {date}",
-      "presentedOn": "Presentato il {date}"
+      availableIn: "Disponibile in {days} giorni",
+      submittedOn: "Inviato il {date}",
+      presentedOn: "Presentato il {date}"
+    },
+    fr: {
+      availableIn: "Disponible dans {days} jours",
+      submittedOn: "Soumis le {date}",
+      presentedOn: "Présenté le {date}"
+    },
+    nl: {
+      availableIn: "Beschikbaar over {days} dagen",
+      submittedOn: "Ingediend op {date}",
+      presentedOn: "Gepresenteerd op {date}"
+    },
+    sv: {
+      availableIn: "Tillgänglig om {days} dagar",
+      submittedOn: "Skickades in den {date}",
+      presentedOn: "Presenterades den {date}"
+    },
+    fi: {
+      availableIn: "Saatavilla {days} päivän kuluttua",
+      submittedOn: "Lähetetty {date}",
+      presentedOn: "Esitetty {date}"
+    },
+    no: {
+      availableIn: "Tilgjengelig om {days} dager",
+      submittedOn: "Sendt inn {date}",
+      presentedOn: "Presentert {date}"
+    },
+    da: {
+      availableIn: "Tilgængelig om {days} dage",
+      submittedOn: "Indsendt den {date}",
+      presentedOn: "Præsenteret den {date}"
+    },
+    pl: {
+      availableIn: "Dostępne za {days} dni",
+      submittedOn: "Złożono dnia {date}",
+      presentedOn: "Zaprezentowano dnia {date}"
+    },
+    ko: {
+      availableIn: "{days}일 후 사용 가능",
+      submittedOn: "{date}에 제출됨",
+      presentedOn: "{date}에 발표됨"
+    },
+    ja: {
+      availableIn: "{days}日後に利用可能",
+      submittedOn: "{date}に提出",
+      presentedOn: "{date}に発表"
+    },
+    zh: {
+      availableIn: "{days}天后可用",
+      submittedOn: "{date}提交",
+      presentedOn: "{date}展示"
     }
   };
   let currentLanguage = 'en';
@@ -59,11 +114,22 @@
 
   // Initialize translations immediately on page load
   document.addEventListener("DOMContentLoaded", function() {
-    updateTranslations();
+    const currentLanguage = getCurrentLanguage();
+    updateTranslations(currentLanguage);
     updateTimeLeft(currentLanguage);
   });
 
-  function updateTranslations() {
+  function getCurrentLanguage() {
+    const storedLanguage = localStorage.getItem('preferredLanguage');
+    if (storedLanguage) {
+      return storedLanguage;
+    }
+
+    const browserLanguage = navigator.language
+    return browserLanguage.split('-')[0];
+  }
+
+  function updateTranslations(currentLanguage) {
     document.querySelectorAll('[data-i18n]').forEach(el => {
       const key = el.getAttribute('data-i18n');
       if (localization[currentLanguage][key]) {
