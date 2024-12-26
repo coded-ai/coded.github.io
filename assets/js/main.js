@@ -68,6 +68,16 @@
       submittedOn: "Złożono dnia {date}",
       presentedOn: "Zaprezentowano dnia {date}"
     },
+    ar: {
+      availableIn: "متاح خلال {days} أيام",
+      submittedOn: "تم تقديمه في {date}",
+      presentedOn: "تم عرضه في {date}"
+    },
+    he: {
+      availableIn: "יהיה זמין בעוד {days} ימים",
+      submittedOn: "הוגש ב-{date}",
+      presentedOn: "הוצג ב-{date}"
+    },
     ko: {
       availableIn: "{days}일 후 사용 가능",
       submittedOn: "{date}에 제출됨",
