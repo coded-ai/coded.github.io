@@ -1,111 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title data-i18n="title">Cookie Policy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title data-i18n="title">CODED | Cookies Policy</title>
     <meta name="description" content="CODED Cookie Policy, explaining how cookies are used to enhance your experience.">
-    <meta name="keywords" content="Cookies, Cookie Policy, CODED, Privacy">
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Main CSS File -->
-    <link href="assets/css/cookies.css" rel="stylesheet">
-    <!-- Favicon -->
-    <link rel="icon" href="assets/img/colorful_logo.png" type="image/x-icon">
-    <script src="https://unpkg.com/i18next@21.6.3/dist/umd/i18next.min.js"></script>
-</head>
-
-<body>
-<script src="assets/js/localization.js"></script> <!-- Localization Script -->
-<div class="container">
-    <div class="header-container d-flex justify-content-between align-items-center my-4">
-        <img src="assets/img/colorful_logo.png" alt="Company Logo" class="company-logo" loading="lazy">
-        <h1 data-i18n="title">CODED | Cookies Policy</h1>
-        <div>
-            <label for="language-select" class="visually-hidden">Select Language</label>
-            <select id="language-select" class="form-select w-auto" aria-label="Select Language">
-                <option value="en">🇬🇧 English</option>
-                <option value="es">🇪🇸 Español</option>
-                <option value="pt">🇵🇹 Português</option>
-                <option value="fr">🇫🇷 Français</option>
-                <option value="de">🇩🇪 Deutsch</option>
-                <option value="tr">🇹🇷 Türkçe</option>
-                <option value="it">🇮🇹 Italiano</option>
-                <option value="nl">🇳🇱 Nederlands</option>
-                <option value="sv">🇸🇪 Svenska</option>
-                <option value="fi">🇫🇮 Suomi</option>
-                <option value="no">🇳🇴 Norsk</option>
-                <option value="da">🇩🇰 Dansk</option>
-                <option value="pl">🇵🇱 Polska</option>
-                <option value="ar">عربي 🇸🇦</option>
-                <option value="he">🇮🇱 עִברִית</option>
-                <option value="ko">🇰🇷 한국어</option>
-                <option value="ja">🇯🇵 日本語</option>
-                <option value="zh">🇨🇳 中文</option>
+    <link rel="icon" href="assets/img/colorful_logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/style.css?v=3">
+    <script src="assets/js/localization.js?v=3" defer></script>
+    <script src="assets/js/main.js?v=3" defer></script>
+  </head>
+  <body class="policy-page">
+    <a class="skip-link" href="#main"><span data-i18n="skipContent">Skip to content</span></a>
+    <header id="header" class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="CODED"><img src="assets/img/colorful_logo.png" width="32" height="32" alt=""><span>CODED<span class="brand-dot">.</span></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navbar"><i class="bi bi-list" aria-hidden="true"></i><span data-i18n="menu">Menu</span></button>
+        <nav id="navbar" class="site-nav">
+          <a href="index.html#about"><span data-i18n="about">About</span></a>
+          <a href="index.html#reports"><span data-i18n="academicReports">Academic Reports</span></a>
+          <a href="index.html#team"><span data-i18n="team">Team</span></a>
+          <a href="index.html#contact"><span data-i18n="contact">Contact</span></a>
+          <div class="language-control">
+            <i class="bi bi-translate" aria-hidden="true"></i>
+            <select id="language-select" aria-label="Select language" data-i18n-aria="language">
+              <option value="en">English</option>
+              <option value="es">Español</option>
+              <option value="pt">Português</option>
+              <option value="fr">Français</option>
+              <option value="de">Deutsch</option>
+              <option value="tr">Türkçe</option>
+              <option value="it">Italiano</option>
+              <option value="nl">Nederlands</option>
+              <option value="sv">Svenska</option>
+              <option value="fi">Suomi</option>
+              <option value="no">Norsk</option>
+              <option value="da">Dansk</option>
+              <option value="pl">Polski</option>
+              <option value="ar">عربي</option>
+              <option value="he">עִברִית</option>
+              <option value="ko">한국어</option>
+              <option value="ja">日本語</option>
+              <option value="zh">中文</option>
             </select>
-        </div>
-    </div>
-    <p data-i18n="lastUpdated">Last updated: September 4, 2024</p>
-    <h2 data-i18n="interpretationDefinitions">Interpretation and Definitions</h2>
-    <h4 data-i18n="interpretation">Interpretation</h4>
-    <p data-i18n="interpretationText">
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main id="main" class="container policy-main">
+      <div class="policy-heading">
+        <p class="eyebrow">CODED / <span data-i18n="cookiePolicy">Cookie Policy</span></p>
+        <h1 data-i18n="title">CODED | Cookies Policy</h1>
+      </div>
+      <article class="policy-content">
+        <p data-i18n="lastUpdated">Last updated: September 4, 2024</p>
+        <h2 data-i18n="interpretationDefinitions">Interpretation and Definitions</h2>
+        <h3 data-i18n="interpretation">Interpretation</h3>
+        <p data-i18n="interpretationText">
         The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
     </p>
-    <h4 data-i18n="definitions">Definitions</h4>
-    <p data-i18n="definitionsText">For the purposes of this Cookies Policy:</p>
-    <ul>
-        <li><strong data-i18n="company">Company</strong> <span data-i18n="companyText"> referred to as either "the Company", "We", "Us" or "Our" in this Cookies Policy</span></li>
-        <li><strong data-i18n="cookies">Cookies</strong> <span data-i18n="cookiesText"> means small files that are placed on Your computer, mobile device, or any other device by a website, containing details of your browsing history on that website among its many uses.</span></li>
-        <li><strong data-i18n="website">Website</strong> <span data-i18n="websiteText"> refers to CODED, accessible from <a href="https://coded-ai.github.io/coded.github.io/" rel="external nofollow noopener" target="_blank">https://coded-ai.github.io/coded.github.io/</a></span></li>
-        <li><strong data-i18n="you">You</strong> <span data-i18n="youText"> means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable.</span></li>
-    </ul>
-    <h2 data-i18n="useOfCookies">The use of the Cookies</h2>
-    <h4 data-i18n="typeOfCookies">Type of Cookies We Use</h4>
-    <p data-i18n="typeOfCookiesText">
+        <h3 data-i18n="definitions">Definitions</h3>
+        <p data-i18n="definitionsText">For the purposes of this Cookies Policy:</p>
+        <ul>
+          <li>
+            <strong data-i18n="company">Company</strong>
+            <span data-i18n="companyText"> referred to as either "the Company", "We", "Us" or "Our" in this Cookies Policy</span>
+          </li>
+          <li>
+            <strong data-i18n="cookies">Cookies</strong>
+            <span data-i18n="cookiesText"> means small files that are placed on Your computer, mobile device, or any other device by a website, containing details of your browsing history on that website among its many uses.</span>
+          </li>
+          <li>
+            <strong data-i18n="website">Website</strong>
+            <span data-i18n="websiteText"> refers to CODED, accessible from <a href="https://coded-ai.github.io/coded.github.io/" rel="external nofollow noopener" target="_blank">https://coded-ai.github.io/coded.github.io/</a></span>
+          </li>
+          <li>
+            <strong data-i18n="you">You</strong>
+            <span data-i18n="youText"> means the individual accessing or using the Website, or a company, or any legal entity on behalf of which such individual is accessing or using the Website, as applicable.</span>
+          </li>
+        </ul>
+        <h2 data-i18n="useOfCookies">The use of the Cookies</h2>
+        <h3 data-i18n="typeOfCookies">Type of Cookies We Use</h3>
+        <p data-i18n="typeOfCookiesText">
         Cookies can be "Persistent" or "Session" Cookies. Persistent Cookies remain on your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close your web browser.
     </p>
-    <p data-i18n="cookiesPurposes">
+        <p data-i18n="cookiesPurposes">
         We use both session and persistent Cookies for the purposes set out below:
     </p>
-    <ul>
-        <li>
+        <ul>
+          <li>
             <p><strong data-i18n="necessaryEssentialCookies">Necessary / Essential Cookies</strong></p>
             <p data-i18n="necessaryEssentialType">Type: Session Cookies</p>
             <p data-i18n="necessaryEssentialAdministeredBy">Administered by: Us</p>
             <p data-i18n="necessaryEssentialPurpose">
                 These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.
             </p>
-        </li>
-        <li>
+          </li>
+          <li>
             <p><strong data-i18n="functionalityCookies">Functionality Cookies</strong></p>
             <p data-i18n="functionalityType">Type: Persistent Cookies</p>
             <p data-i18n="functionalityAdministeredBy">Administered by: Us</p>
             <p data-i18n="functionalityPurpose">
                 These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.
             </p>
-        </li>
-    </ul>
-    <h4 data-i18n="yourChoices">Your Choices Regarding Cookies</h4>
-    <p data-i18n="yourChoicesText1">
+          </li>
+        </ul>
+        <h3 data-i18n="yourChoices">Your Choices Regarding Cookies</h3>
+        <p data-i18n="yourChoicesText1">
         If You prefer to avoid the use of Cookies on the Website, first You must disable the use of Cookies in your browser and then delete the Cookies saved in your browser associated with this website. You may use this option for preventing the use of Cookies at any time.
     </p>
-    <p data-i18n="yourChoicesText2">
+        <p data-i18n="yourChoicesText2">
         If You do not accept Our Cookies, You may experience some inconvenience in your use of the Website and some features may not function properly.
     </p>
-    <div class="back-button-container my-4">
-        <a href="https://coded-ai.github.io/coded.github.io/" class="btn btn-secondary" data-i18n="goBack">Go Back</a>
-    </div>
-</div>
-<footer class="footer text-center py-4">
-    <p data-i18n="footerText">&copy; <span id="current-year"></span> CODED | All Rights Reserved</p>
-</footer>
-</body>
-
+        <a class="button button-secondary" href="index.html"><i class="bi bi-arrow-left" aria-hidden="true"></i><span data-i18n="goBack">Go Back</span></a>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="brand" href="index.html"><img src="assets/img/colorful_logo.png" width="32" height="32" alt=""><span>CODED.</span></a>
+            <p data-i18n="heroWelcomeSubText">Renovating Learning with AI.</p>
+          </div>
+          <div class="footer-links">
+            <a class="text-link" href="https://coded-inc.gitbook.io/documentation-students" target="_blank" rel="noopener noreferrer"><span data-i18n="documentation">Documentation</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            <a class="text-link" href="https://github.com/coded-ai" target="_blank" rel="noopener noreferrer"><span data-i18n="followOnGithub">Follow us on GitHub</span><i class="bi bi-github" aria-hidden="true"></i></a>
+            <a class="text-link" href="https://form.jotform.com/240764186817970" target="_blank" rel="noopener noreferrer"><span data-i18n="feedback">Feedback</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p data-i18n="footerText">© <span id="current-year"></span> CODED | All Rights Reserved</p>
+          <a href="cookie-policy.html"><span data-i18n="cookiePolicy">Cookie Policy</span></a>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
