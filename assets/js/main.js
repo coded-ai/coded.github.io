@@ -24,7 +24,7 @@
   window.matchMedia('(min-width: 992px)').addEventListener('change', closeMenu);
   const motionPreference = window.matchMedia('(prefers-reduced-motion: reduce)');
   if ('IntersectionObserver' in window && !motionPreference.matches) {
-    const items = [...document.querySelectorAll('.hero-copy, .award-card, .section-heading, .feature, .access-note, .report-row, .person, .contact-copy, .contact-form, .policy-heading')];
+    const items = [...document.querySelectorAll('.section-heading, .advisor-heading, .feature, .access-note, .report-row, .person, .contact-copy, .contact-form, .policy-heading')];
     const reveal = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (!entry.isIntersecting) return;

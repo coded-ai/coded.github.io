@@ -3,20 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff8ec">
     <title>CODED — AI-powered learning at Bilkent</title>
     <meta name="description" content="An AI-powered lab tutor for Computer Science and CTIS students at Bilkent University. Winner of the Innovation Award at CS Fair 2024." data-i18n="descriptionText">
     <link rel="icon" href="assets/img/colorful_logo.png" type="image/png">
-    <link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
     <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
-    <link rel="stylesheet" href="assets/css/style.css?v=3">
-    <script src="assets/js/localization.js?v=3" defer></script>
-    <script src="assets/js/main.js?v=3" defer></script>
+    <link rel="stylesheet" href="assets/css/style.css?v=6">
+    <script src="assets/js/localization.js?v=6" defer></script>
+    <script src="assets/js/main.js?v=6" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main"><span data-i18n="skipContent">Skip to content</span></a>
     <header id="header" class="site-header">
+      <div class="scroll-progress" aria-hidden="true"></div>
       <div class="container header-inner">
-        <a class="brand" href="#hero" aria-label="CODED"><img src="assets/img/colorful_logo.png" width="32" height="32" alt=""><span>CODED<span class="brand-dot">.</span></span></a>
+        <a class="brand" href="#hero" aria-label="CODED"><img src="assets/img/colorful_logo.png" width="30" height="30" alt=""><span>CODED</span></a>
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navbar"><i class="bi bi-list" aria-hidden="true"></i><span data-i18n="menu">Menu</span></button>
         <nav id="navbar" class="site-nav">
           <a href="#about"><span data-i18n="about">About</span></a>
@@ -53,65 +57,88 @@
       <section id="hero" class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>CODED / BILKENT UNIVERSITY</p>
+            <p class="sticker"><i class="bi bi-stars" aria-hidden="true"></i>CODED / Bilkent University</p>
             <h1 data-i18n="heroWelcomeText">A smarter way to learn code.</h1>
             <p class="hero-description" data-i18n="introductionSectionHighlightedText">An AI-powered lab tutor for Computer Science and CTIS students at Bilkent University. Built to support independent learning, from the first question to the final test.</p>
             <div class="hero-actions">
-              <a class="button button-primary" href="#reports"><span data-i18n="academicReports">Academic Reports</span><i class="bi bi-arrow-down-right" aria-hidden="true"></i></a>
-              <a class="button button-secondary" href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" rel="noopener noreferrer"><span data-i18n="tryOnChatGPT">Try CODED AI on ChatGPT</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              <a class="button button-primary" href="https://chatgpt.com/g/g-M1bW2DWZa-coded-ai" target="_blank" rel="noopener noreferrer"><span data-i18n="tryOnChatGPT">Try CODED AI on ChatGPT</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              <a class="button button-secondary" href="#reports"><span data-i18n="academicReports">Academic Reports</span><i class="bi bi-arrow-down" aria-hidden="true"></i></a>
             </div>
           </div>
-          <aside class="award-card">
-            <div class="award-top">
-              <img src="assets/img/bilkent-logo.png" width="52" height="52" alt="Bilkent University">
-              <span>CS FAIR<br><strong>BILKENT UNIVERSITY</strong></span>
-              <i class="bi bi-award" aria-hidden="true"></i>
+          <div class="hero-stack">
+            <div class="code-card" aria-hidden="true">
+              <div class="code-card-bar"><span>lab03.java</span><span class="code-card-dots"><i></i><i></i><i></i></span></div>
+              <pre><code><span class="c-line" style="--i:0"><span class="c-kw">int</span> sum(<span class="c-kw">int</span>[] a) {</span><span class="c-line" style="--i:1">  <span class="c-kw">int</span> s = <span class="c-num">0</span>;</span><span class="c-line" style="--i:2">  <span class="c-kw">for</span> (<span class="c-kw">int</span> x : a) s += x;</span><span class="c-line" style="--i:3">  <span class="c-kw">return</span> s;</span><span class="c-line" style="--i:4">}<span class="c-caret"></span></span></code></pre>
+              <div class="code-card-stamps">
+                <span class="stamp stamp-green" style="--s:0">✓ 12/12</span>
+                <span class="stamp stamp-violet" style="--s:1">A</span>
+                <span class="stamp stamp-peach" style="--s:2">4%</span>
+              </div>
             </div>
-            <div class="award-year" aria-hidden="true">
-              2024
-              <i class="bi bi-arrow-up-right" aria-hidden="true"></i>
-            </div>
-            <h2 data-i18n="awardTitle">Innovation Award</h2>
-            <p data-i18n="bannerText">CODED has won the Innovation Award at Bilkent University CS Fair 2024!</p>
-            <a class="award-link" href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><span data-i18n="learnMore">Learn More</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
-          </aside>
+            <aside class="award-card">
+              <div class="award-top">
+                <img src="assets/img/bilkent-logo.png" width="44" height="44" alt="Bilkent University">
+                <i class="bi bi-trophy-fill" aria-hidden="true"></i>
+              </div>
+              <div class="award-year" aria-hidden="true">2024</div>
+              <h2 data-i18n="awardTitle">Innovation Award</h2>
+              <p data-i18n="bannerText">CODED has won the Innovation Award at Bilkent University CS Fair 2024!</p>
+              <a class="award-link" href="https://www.linkedin.com/posts/emre-karatas00_generativeai-datascience-llm-activity-7198583091060215808-zm5l?utm_source=share&utm_medium=member_desktop" target="_blank" rel="noopener noreferrer"><span data-i18n="learnMore">Learn More</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            </aside>
+          </div>
         </div>
       </section>
+      <div class="marquee">
+        <div class="marquee-track">
+          <ul class="marquee-group">
+            <li data-i18n="chatbotSectionTitle">AI-Powered Chatbot</li>
+            <li data-i18n="similaritySectionTitle">Advanced Similarity Check</li>
+            <li data-i18n="cleanCodeSectionTitle">Clean Code Evaluator</li>
+            <li data-i18n="testCaseRunnerSectionTitle">Automated Test Case Runner</li>
+          </ul>
+          <ul class="marquee-group" aria-hidden="true">
+            <li data-i18n="chatbotSectionTitle">AI-Powered Chatbot</li>
+            <li data-i18n="similaritySectionTitle">Advanced Similarity Check</li>
+            <li data-i18n="cleanCodeSectionTitle">Clean Code Evaluator</li>
+            <li data-i18n="testCaseRunnerSectionTitle">Automated Test Case Runner</li>
+          </ul>
+        </div>
+      </div>
       <section id="about" class="section capabilities">
         <div class="container">
           <div class="section-heading">
-            <p class="eyebrow"><span>01 /</span><span data-i18n="about">About</span></p>
+            <p class="eyebrow"><span class="eyebrow-index">01</span><span data-i18n="about">About</span></p>
             <h2 data-i18n="introductionSectionHeading">Four tools. A better learning experience.</h2>
           </div>
           <div class="feature-grid">
-            <article class="feature">
+            <article class="feature feature-violet">
               <div class="feature-top">
-                <i class="bi bi-chat-square-text" aria-hidden="true"></i>
-                <span aria-hidden="true">01</span>
+                <span class="feature-icon"><i class="bi bi-chat-square-text" aria-hidden="true"></i></span>
+                <span class="feature-number" aria-hidden="true">01</span>
               </div>
               <h3 data-i18n="chatbotSectionTitle">AI-Powered Chatbot</h3>
               <p data-i18n="chatbotSectionDesc">Instantly resolve your lab queries with our smart chatbot, providing guidance without giving away direct answers.</p>
             </article>
-            <article class="feature">
+            <article class="feature feature-pink">
               <div class="feature-top">
-                <i class="bi bi-intersect" aria-hidden="true"></i>
-                <span aria-hidden="true">02</span>
+                <span class="feature-icon"><i class="bi bi-intersect" aria-hidden="true"></i></span>
+                <span class="feature-number" aria-hidden="true">02</span>
               </div>
               <h3 data-i18n="similaritySectionTitle">Advanced Similarity Check</h3>
               <p data-i18n="similaritySectionDesc">Ensure academic integrity by comparing your code with previous submissions and repositories.</p>
             </article>
-            <article class="feature">
+            <article class="feature feature-peach">
               <div class="feature-top">
-                <i class="bi bi-code-slash" aria-hidden="true"></i>
-                <span aria-hidden="true">03</span>
+                <span class="feature-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></span>
+                <span class="feature-number" aria-hidden="true">03</span>
               </div>
               <h3 data-i18n="cleanCodeSectionTitle">Clean Code Evaluator</h3>
               <p data-i18n="cleanCodeSectionDesc">Receive comprehensive feedback on your code quality, including readability, efficiency, and security.</p>
             </article>
-            <article class="feature">
+            <article class="feature feature-mint">
               <div class="feature-top">
-                <i class="bi bi-check2-square" aria-hidden="true"></i>
-                <span aria-hidden="true">04</span>
+                <span class="feature-icon"><i class="bi bi-check2-square" aria-hidden="true"></i></span>
+                <span class="feature-number" aria-hidden="true">04</span>
               </div>
               <h3 data-i18n="testCaseRunnerSectionTitle">Automated Test Case Runner</h3>
               <p data-i18n="testCaseRunnerSectionDesc">Run your code against multiple test cases effortlessly to ensure it meets all requirements.</p>
@@ -123,14 +150,14 @@
         <div class="container">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow"><span>02 /</span> CODED</p>
+              <p class="eyebrow"><span class="eyebrow-index">02</span>CODED</p>
               <h2 data-i18n="academicReports">Academic Reports</h2>
             </div>
             <p data-i18n="reportsIntro">Explore the work behind CODED, from the initial specification to the final report.</p>
           </div>
           <div class="reports-layout">
             <aside class="access-note">
-              <i class="bi bi-lock" aria-hidden="true"></i>
+              <span class="feature-icon"><i class="bi bi-lock-fill" aria-hidden="true"></i></span>
               <h3 data-i18n="academicReportsSectionTitle">Academic reports are <span class="highlight">password protected</span></h3>
               <p data-i18n="academicReportsSectionDesc">All academic reports are password protected. To request access, please click the button below and fill out the form. You will receive the necessary credentials via email.</p>
               <a class="button button-primary" href="https://form.jotform.com/242311089150043" target="_blank" rel="noopener noreferrer"><span data-i18n="requestAccess">Request Access</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
@@ -162,7 +189,7 @@
         <div class="container">
           <div class="section-heading split-heading">
             <div>
-              <p class="eyebrow"><span>03 /</span> CODED</p>
+              <p class="eyebrow"><span class="eyebrow-index">03</span>CODED</p>
               <h2 data-i18n="team">Team</h2>
             </div>
             <p data-i18n="teamIntro">Meet the students and mentors behind CODED.</p>
@@ -170,7 +197,7 @@
           <div class="team-grid">
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/emre.jpg" alt="Emre Karataş" loading="lazy" width="300" height="340">
+                <img src="assets/img/team/emre.jpg" alt="Emre Karataş" loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Emre Karataş</h3>
@@ -184,7 +211,7 @@
             </article>
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/beyza.png" alt="Beyza Çağlar" loading="lazy" width="300" height="340">
+                <img src="assets/img/team/beyza.png" alt="Beyza Çağlar" loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Beyza Çağlar</h3>
@@ -198,7 +225,7 @@
             </article>
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/selin.png" alt="Selin Bahar Gündoğar" loading="lazy" width="300" height="340">
+                <img src="assets/img/team/selin.png" alt="Selin Bahar Gündoğar" loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Selin Bahar Gündoğar</h3>
@@ -212,7 +239,7 @@
             </article>
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/zeyneph.jpg" alt="Zeynep Hanife Akgül" loading="lazy" width="300" height="340">
+                <img src="assets/img/team/zeyneph.jpg" alt="Zeynep Hanife Akgül" loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Zeynep Hanife Akgül</h3>
@@ -226,7 +253,7 @@
             </article>
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/zeynepselcen.png" alt="Zeynep Selcen Öztunç" loading="lazy" width="300" height="340">
+                <img src="assets/img/team/zeynepselcen.png" alt="Zeynep Selcen Öztunç" loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Zeynep Selcen Öztunç</h3>
@@ -245,7 +272,7 @@
           <div class="advisor-grid">
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/guvenir.jpg" alt="Halil Altay Güvenir, Prof." loading="lazy" width="300" height="340">
+                <img src="assets/img/team/guvenir.jpg" alt="Halil Altay Güvenir, Prof." loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Halil Altay Güvenir, Prof.</h3>
@@ -258,7 +285,7 @@
             </article>
             <article class="person">
               <div class="portrait">
-                <img src="assets/img/team/bora.jpg" alt="Bora Güngören" loading="lazy" width="300" height="340">
+                <img src="assets/img/team/bora.jpg" alt="Bora Güngören" loading="lazy" width="300" height="300">
               </div>
               <div class="person-info">
                 <h3>Bora Güngören</h3>
@@ -275,16 +302,18 @@
       <section id="contact" class="section contact">
         <div class="container contact-grid">
           <div class="contact-copy">
-            <p class="eyebrow"><span>04 /</span> CODED</p>
+            <p class="eyebrow"><span class="eyebrow-index">04</span>CODED</p>
             <h2 data-i18n="contact">Contact</h2>
             <p data-i18n="contactIntro">Want to know more about the project? Get in touch with the CODED team.</p>
             <div class="location-block">
               <i class="bi bi-geo-alt" aria-hidden="true"></i>
-              <p data-i18n="address">Bilkent University<br>
+              <div>
+                <p data-i18n="address">Bilkent University<br>
                         Department of Computer Science</p>
-              <a class="text-link" href="https://maps.app.goo.gl/XCe4TWQHVofDgkWZA" target="_blank" rel="noopener noreferrer"><span data-i18n="viewOnGoogleMaps">View on Google Maps</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+                <a class="text-link" href="https://maps.app.goo.gl/XCe4TWQHVofDgkWZA" target="_blank" rel="noopener noreferrer"><span data-i18n="viewOnGoogleMaps">View on Google Maps</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+              </div>
             </div>
-            <a class="text-link" href="https://form.jotform.com/240232951883963" target="_blank" rel="noopener noreferrer"><span data-i18n="openForm">Open contact form</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
+            <a class="button button-secondary" href="https://form.jotform.com/240232951883963" target="_blank" rel="noopener noreferrer"><span data-i18n="openForm">Open contact form</span><i class="bi bi-arrow-up-right" aria-hidden="true"></i></a>
           </div>
           <div class="contact-form">
             <script src="https://form.jotform.com/jsform/240232951883963"></script>
@@ -296,7 +325,7 @@
       <div class="container">
         <div class="footer-top">
           <div>
-            <a class="brand" href="index.html"><img src="assets/img/colorful_logo.png" width="32" height="32" alt=""><span>CODED.</span></a>
+            <a class="brand" href="index.html"><img src="assets/img/colorful_logo.png" width="30" height="30" alt=""><span>CODED</span></a>
             <p data-i18n="heroWelcomeSubText">Renovating Learning with AI.</p>
           </div>
           <div class="footer-links">
